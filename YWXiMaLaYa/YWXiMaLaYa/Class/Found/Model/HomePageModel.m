@@ -62,16 +62,16 @@
 @end
 
 
-@implementation Entrance
+@implementation Entrances
 
 + (NSDictionary *)objectClassInArray{
-    return @{@"list" : [Entrance_List class]};
+    return @{@"list" : [Entrances_List class]};
 }
 
 @end
 
 
-@implementation Entrance_List
+@implementation Entrances_List
 
 @end
 

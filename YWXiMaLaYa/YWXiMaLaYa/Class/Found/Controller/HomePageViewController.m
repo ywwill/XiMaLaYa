@@ -8,11 +8,7 @@
 
 #import "HomePageViewController.h"
 
-#import "HomePageNetManager.h"
-#import "HomePageModel.h"
-
 @interface HomePageViewController ()
-@property (nonatomic,strong) HomePageModel *model;
 @end
 
 @implementation HomePageViewController
@@ -20,10 +16,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [HomePageNetManager getHomePageIntroduceCompletionHandle:^(HomePageModel* responseObject, NSError *error) {
-        YWLog(@"%@",responseObject.focusImage.title);
-     
-    }];
 }
 
 - (void)didReceiveMemoryWarning {
