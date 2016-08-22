@@ -27,6 +27,7 @@
 		61884EA31D6ADDBC003371A0 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EA21D6ADDBC003371A0 /* BaseNetManager.m */; };
 		61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EA51D6AE2BA003371A0 /* HomePageNetManager.m */; };
 		61884EA91D6AE521003371A0 /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EA81D6AE521003371A0 /* HomePageModel.m */; };
+		61884EAC1D6AF340003371A0 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EAB1D6AF340003371A0 /* BaseModel.m */; };
 		61C610441D658C2B00219E61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C610431D658C2B00219E61 /* main.m */; };
 		61C610471D658C2B00219E61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C610461D658C2B00219E61 /* AppDelegate.m */; };
 		61C6104F1D658C2B00219E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C6104E1D658C2B00219E61 /* Assets.xcassets */; };
@@ -96,6 +97,8 @@
 		61884EA51D6AE2BA003371A0 /* HomePageNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageNetManager.m; sourceTree = "<group>"; };
 		61884EA71D6AE521003371A0 /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
 		61884EA81D6AE521003371A0 /* HomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModel.m; sourceTree = "<group>"; };
+		61884EAA1D6AF340003371A0 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		61884EAB1D6AF340003371A0 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		61C6103F1D658C2B00219E61 /* YWXiMaLaYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YWXiMaLaYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C610431D658C2B00219E61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61C610451D658C2B00219E61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -269,6 +272,8 @@
 		6187694F1D65922E0018B807 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				61884EAA1D6AF340003371A0 /* BaseModel.h */,
+				61884EAB1D6AF340003371A0 /* BaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -619,6 +624,7 @@
 				6187696B1D6596A00018B807 /* YWDownloadViewController.m in Sources */,
 				618769771D65A01B0018B807 /* HomePageViewController.m in Sources */,
 				6187697A1D65A0280018B807 /* CategoryViewController.m in Sources */,
+				61884EAC1D6AF340003371A0 /* BaseModel.m in Sources */,
 				618769831D65A0500018B807 /* AnchorViewController.m in Sources */,
 				6187695F1D6595860018B807 /* SettingViewController.m in Sources */,
 				61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */,
