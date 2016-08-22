@@ -11,5 +11,6 @@ pod ‘WMPageController’
 pod ‘MJRefresh’
 pod ‘BlocksKit’
 pod ‘MBProgressHUD’
+pod 'iCarousel'
 
 end

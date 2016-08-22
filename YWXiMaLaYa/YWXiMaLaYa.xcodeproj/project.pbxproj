@@ -24,6 +24,9 @@
 		618769861D65A2000018B807 /* YWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769851D65A2000018B807 /* YWNavigationController.m */; };
 		618769891D65A2300018B807 /* YWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769881D65A2300018B807 /* YWTabBarController.m */; };
 		61884EA01D6A9767003371A0 /* MeSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61884E9F1D6A9767003371A0 /* MeSetting.storyboard */; };
+		61884EA31D6ADDBC003371A0 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EA21D6ADDBC003371A0 /* BaseNetManager.m */; };
+		61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EA51D6AE2BA003371A0 /* HomePageNetManager.m */; };
+		61884EA91D6AE521003371A0 /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EA81D6AE521003371A0 /* HomePageModel.m */; };
 		61C610441D658C2B00219E61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C610431D658C2B00219E61 /* main.m */; };
 		61C610471D658C2B00219E61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C610461D658C2B00219E61 /* AppDelegate.m */; };
 		61C6104F1D658C2B00219E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C6104E1D658C2B00219E61 /* Assets.xcassets */; };
@@ -87,6 +90,12 @@
 		618769871D65A2300018B807 /* YWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWTabBarController.h; sourceTree = "<group>"; };
 		618769881D65A2300018B807 /* YWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWTabBarController.m; sourceTree = "<group>"; };
 		61884E9F1D6A9767003371A0 /* MeSetting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeSetting.storyboard; sourceTree = "<group>"; };
+		61884EA11D6ADDBC003371A0 /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
+		61884EA21D6ADDBC003371A0 /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
+		61884EA41D6AE2BA003371A0 /* HomePageNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageNetManager.h; sourceTree = "<group>"; };
+		61884EA51D6AE2BA003371A0 /* HomePageNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageNetManager.m; sourceTree = "<group>"; };
+		61884EA71D6AE521003371A0 /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
+		61884EA81D6AE521003371A0 /* HomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModel.m; sourceTree = "<group>"; };
 		61C6103F1D658C2B00219E61 /* YWXiMaLaYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YWXiMaLaYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C610431D658C2B00219E61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61C610451D658C2B00219E61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +194,8 @@
 		618769471D65922E0018B807 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				61884EA71D6AE521003371A0 /* HomePageModel.h */,
+				61884EA81D6AE521003371A0 /* HomePageModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +203,8 @@
 		618769481D65922E0018B807 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
+				61884EA41D6AE2BA003371A0 /* HomePageNetManager.h */,
+				61884EA51D6AE2BA003371A0 /* HomePageNetManager.m */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -263,6 +276,8 @@
 		618769501D65922E0018B807 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
+				61884EA11D6ADDBC003371A0 /* BaseNetManager.h */,
+				61884EA21D6ADDBC003371A0 /* BaseNetManager.m */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -593,9 +608,11 @@
 				6187695C1D6595640018B807 /* YWMeViewController.m in Sources */,
 				618769741D65A0060018B807 /* YWFindViewController.m in Sources */,
 				61C610471D658C2B00219E61 /* AppDelegate.m in Sources */,
+				61884EA31D6ADDBC003371A0 /* BaseNetManager.m in Sources */,
 				6187696E1D6596B70018B807 /* AlbumViewController.m in Sources */,
 				61C610441D658C2B00219E61 /* main.m in Sources */,
 				618769711D6596C90018B807 /* DownloadViewController.m in Sources */,
+				61884EA91D6AE521003371A0 /* HomePageModel.m in Sources */,
 				6187697D1D65A0360018B807 /* LiveViewController.m in Sources */,
 				618769621D6596340018B807 /* AttentionViewController.m in Sources */,
 				618769861D65A2000018B807 /* YWNavigationController.m in Sources */,
@@ -604,6 +621,7 @@
 				6187697A1D65A0280018B807 /* CategoryViewController.m in Sources */,
 				618769831D65A0500018B807 /* AnchorViewController.m in Sources */,
 				6187695F1D6595860018B807 /* SettingViewController.m in Sources */,
+				61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */,
 				618769681D6596700018B807 /* YWSoundViewController.m in Sources */,
 				618769651D65964A0018B807 /* HistoryViewController.m in Sources */,
 				618769801D65A0430018B807 /* RankingViewController.m in Sources */,

@@ -8,6 +8,8 @@
 
 #import "HomePageViewController.h"
 
+#import "HomePageNetManager.h"
+
 @interface HomePageViewController ()
 
 @end
@@ -16,7 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [HomePageNetManager getHomePageIntroduceCompletionHandle:^(id responseObject, NSError *error) {
+
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
