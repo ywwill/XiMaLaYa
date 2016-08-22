@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WMPageController.h>
+@interface YWDownloadViewController : WMPageController
 
-@interface YWDownloadViewController : UIViewController
+
+/**
+ *  单例创建控制器
+ */
++ (instancetype)downloadViewController;
 
 @end

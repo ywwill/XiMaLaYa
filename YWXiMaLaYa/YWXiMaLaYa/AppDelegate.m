@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "YWNavigationController.h"
+#import "YWTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    YWTabBarController *mainTabBarVC = [[YWTabBarController alloc]init];
+    YWNavigationController *navigationVC = [[YWNavigationController alloc]initWithRootViewController:mainTabBarVC];
+    
+    self.window.rootViewController = navigationVC;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class SettingViewController;
+
+@protocol SettingViewControllerDelegate <NSObject>
+
+- (void)settingViewControllerWillAppear:(SettingViewController *)settingVC;
+
+@end
+
 @interface SettingViewController : UITableViewController
+
+@property (nonatomic, weak) id <SettingViewControllerDelegate> delegate;
 
 @end

@@ -7,6 +7,9 @@
 //
 
 #import "YWDownloadViewController.h"
+#import "AlbumViewController.h"
+#import "DownloadViewController.h"
+
 
 @interface YWDownloadViewController ()
 
@@ -16,7 +19,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+}
+
++ (instancetype)downloadViewController{
+
+    static YWDownloadViewController *downloadVC = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+       
+        downloadVC = [[YWDownloadViewController alloc]initWithViewControllerClasses:[self viewControllers] andTheirTitles:@[@"专辑",@"下载中"]];
+        
+        downloadVC.menuViewStyle = WMMenuViewStyleLine;
+        downloadVC.menuBGColor = [UIColor whiteColor];
+        downloadVC.titleColorSelected = [UIColor redColor];
+        
+        //每个item的宽度
+        downloadVC.itemsWidths = @[@(SCREEN_WIDTH/2), @(SCREEN_WIDTH/2)];
+        downloadVC.progressHeight = 3.5;
+        downloadVC.menuHeight = 45;
+        downloadVC.viewFrame = CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT-20);
+    });
+    return downloadVC;
+}
+
++ (NSArray *)viewControllers{
+
+    return @[[AlbumViewController class], [DownloadViewController class]];
 }
 
 - (void)didReceiveMemoryWarning {

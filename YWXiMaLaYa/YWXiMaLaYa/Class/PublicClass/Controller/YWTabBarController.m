@@ -7,6 +7,11 @@
 //
 
 #import "YWTabBarController.h"
+#import "YWFindViewController.h"
+#import "YWMeViewController.h"
+#import "YWSoundViewController.h"
+#import "YWDownloadViewController.h"
+
 
 @interface YWTabBarController ()
 
@@ -16,22 +21,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UINavigationController *findNavigationVC = [YWFindViewController defaultFindUINavigationController];
+    [self setupChildVC:findNavigationVC imageName:@"tabbar_find_n" selectedImage:@"tabbar_find_h"];
+    
+    YWSoundViewController *soundVC = [YWSoundViewController soundViewController];
+    [self setupChildVC:soundVC imageName:@"tabbar_sound_n" selectedImage:@"tabbar_sound_h"];
+    
+    // 只占用空间
+    UIViewController *vc = [UIViewController new];
+    [self setupChildVC:vc  imageName:nil selectedImage:nil];
+    
+    YWDownloadViewController *downloadVC = [YWDownloadViewController downloadViewController];
+    [self setupChildVC:downloadVC imageName:@"tabbar_download_n" selectedImage:@"tabbar_download_h"];
+    
+    //从storyboard中获取控制器
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MeSetting" bundle:nil];
+    YWMeViewController *meVC = [storyboard instantiateViewControllerWithIdentifier:@"Me"];
+    
+    [self setupChildVC:meVC imageName:@"tabbar_me_n" selectedImage:@"tabbar_me_h"];
+    
+    self.tabBar.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
-/*
-#pragma mark - Navigation
+- (void)setupChildVC:(UIViewController *)vc imageName:(NSString *)imageName selectedImage:(NSString *)selectedImage{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    vc.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
+    vc.tabBarItem.image = [UIImage imageNamed:imageName];
+
+    // 设置图片的不渲染
+    UIImage *image = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    vc.tabBarItem.selectedImage = image;
+    [self addChildViewController:vc];
+
 }
-*/
 
 @end

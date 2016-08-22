@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WMPageController.h>
 
-@interface YWFindViewController : UIViewController
+@interface YWFindViewController : WMPageController
+
+/**
+ *  单例创建带有WMPageController的UINavigationController
+ */
++ (UINavigationController *)defaultFindUINavigationController;
 
 @end
