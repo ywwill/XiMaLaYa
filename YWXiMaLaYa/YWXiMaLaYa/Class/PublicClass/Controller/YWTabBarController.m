@@ -42,6 +42,8 @@
     [self setupChildVC:meVC imageName:@"tabbar_me_n" selectedImage:@"tabbar_me_h"];
     
     self.tabBar.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -25,9 +25,9 @@
 + (instancetype)downloadViewController{
 
     static YWDownloadViewController *downloadVC = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-       
+    
+    YDISPATCH_ONCE_BLOCK((^{
+        
         downloadVC = [[YWDownloadViewController alloc]initWithViewControllerClasses:[self viewControllers] andTheirTitles:@[@"专辑",@"下载中"]];
         
         downloadVC.menuViewStyle = WMMenuViewStyleLine;
@@ -39,7 +39,8 @@
         downloadVC.progressHeight = 3.5;
         downloadVC.menuHeight = 45;
         downloadVC.viewFrame = CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT-20);
-    });
+    }));
+    
     return downloadVC;
 }
 

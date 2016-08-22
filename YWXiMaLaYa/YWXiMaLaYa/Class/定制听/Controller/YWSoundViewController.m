@@ -22,9 +22,11 @@
 }
 // 创建一个单例
 + (instancetype)soundViewController {
+    
     static YWSoundViewController *soundVC = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
+    
+    YDISPATCH_ONCE_BLOCK((^{
+        
         soundVC = [[YWSoundViewController alloc] initWithViewControllerClasses:[self viewControllers] andTheirTitles:@[@"关注", @"历史"]];
         //        WMPageController的设置
         soundVC.menuViewStyle = WMMenuViewStyleLine;
@@ -37,7 +39,8 @@
         soundVC.progressHeight = 3.5;
         soundVC.menuHeight = 45;
         soundVC.viewFrame = CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT-20);
-    });
+    }));
+    
     return soundVC;
 }
 

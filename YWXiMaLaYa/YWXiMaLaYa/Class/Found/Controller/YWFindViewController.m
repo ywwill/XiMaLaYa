@@ -24,15 +24,15 @@
 + (UINavigationController *)defaultFindUINavigationController{
 
     static UINavigationController *navigationVC = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
+    
+    YDISPATCH_ONCE_BLOCK((^{
         YWFindViewController *findVC = [[YWFindViewController alloc]initWithViewControllerClasses:[self viewControllersArray] andTheirTitles:@[@"推荐",@"分类",@"直播",@"榜单",@"主播"]];
         findVC.menuViewStyle = WMMenuViewStyleLine;
         findVC.progressColor = [UIColor redColor];
         findVC.progressHeight = 3.5;
         navigationVC = [[UINavigationController alloc]initWithRootViewController:findVC];
-    });
+        
+    }));
     
     return navigationVC;
     
@@ -52,7 +52,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
