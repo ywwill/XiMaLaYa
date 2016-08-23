@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F81871D6C37AC00AA829F /* HomePageViewModel.m */; };
+		612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818A1D6C381200AA829F /* BaseViewModel.m */; };
 		6187695C1D6595640018B807 /* YWMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187695B1D6595640018B807 /* YWMeViewController.m */; };
 		6187695F1D6595860018B807 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187695E1D6595860018B807 /* SettingViewController.m */; };
 		618769621D6596340018B807 /* AttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769611D6596340018B807 /* AttentionViewController.m */; };
@@ -57,6 +59,10 @@
 /* Begin PBXFileReference section */
 		184A66268665E443784E8BF8 /* Pods-YWXiMaLaYa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWXiMaLaYa.release.xcconfig"; path = "Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa.release.xcconfig"; sourceTree = "<group>"; };
 		5B2DDE3C71135161CD5CC3E9 /* Pods-YWXiMaLaYa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWXiMaLaYa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa.debug.xcconfig"; sourceTree = "<group>"; };
+		612F81861D6C37AC00AA829F /* HomePageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewModel.h; sourceTree = "<group>"; };
+		612F81871D6C37AC00AA829F /* HomePageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewModel.m; sourceTree = "<group>"; };
+		612F81891D6C381200AA829F /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		612F818A1D6C381200AA829F /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		618769591D65926A0018B807 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		6187695A1D6595640018B807 /* YWMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWMeViewController.h; sourceTree = "<group>"; };
 		6187695B1D6595640018B807 /* YWMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWMeViewController.m; sourceTree = "<group>"; };
@@ -222,6 +228,8 @@
 		6187694A1D65922E0018B807 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				612F81861D6C37AC00AA829F /* HomePageViewModel.h */,
+				612F81871D6C37AC00AA829F /* HomePageViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -297,6 +305,8 @@
 		618769521D65922E0018B807 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				612F81891D6C381200AA829F /* BaseViewModel.h */,
+				612F818A1D6C381200AA829F /* BaseViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -611,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6187695C1D6595640018B807 /* YWMeViewController.m in Sources */,
+				612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */,
 				618769741D65A0060018B807 /* YWFindViewController.m in Sources */,
 				61C610471D658C2B00219E61 /* AppDelegate.m in Sources */,
 				61884EA31D6ADDBC003371A0 /* BaseNetManager.m in Sources */,
@@ -628,6 +639,7 @@
 				618769831D65A0500018B807 /* AnchorViewController.m in Sources */,
 				6187695F1D6595860018B807 /* SettingViewController.m in Sources */,
 				61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */,
+				612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */,
 				618769681D6596700018B807 /* YWSoundViewController.m in Sources */,
 				618769651D65964A0018B807 /* HistoryViewController.m in Sources */,
 				618769801D65A0430018B807 /* RankingViewController.m in Sources */,

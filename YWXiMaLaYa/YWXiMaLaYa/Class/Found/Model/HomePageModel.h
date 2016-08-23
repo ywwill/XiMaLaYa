@@ -30,6 +30,7 @@
 @property (nonatomic, strong) EditorRecommendAlbum *editorRecommendAlbums;
 
 @end
+
 @interface DiscoveryColumn : BaseModel
 
 @property (nonatomic, assign) NSInteger locationInHotRecommend;

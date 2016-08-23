@@ -11,6 +11,7 @@
 @implementation HomePageModel
 
 @end
+
 @implementation DiscoveryColumn
 
 + (NSDictionary *)mj_objectClassInArray {
