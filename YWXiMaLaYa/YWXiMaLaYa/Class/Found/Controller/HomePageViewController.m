@@ -203,7 +203,7 @@
 //section头视图
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
 
-    if (section < self.homeVM.section) {
+    if (section < self.homeVM.section - 2) {
         
         TitleView *moreView = [[TitleView alloc]initWithTitle:[self.homeVM mainTitleForSection:section] hasMore:[self.homeVM hasMoreForSection:section]];
         

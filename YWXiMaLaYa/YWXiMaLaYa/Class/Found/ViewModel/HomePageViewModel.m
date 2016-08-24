@@ -13,9 +13,6 @@
 //热门分类 + 其他分类
 #define yOtherSection 5
 
-// 热门推荐前面 (小编推荐+发现新奇+精品听单)  后面（更多分类，热门直播）
-#define yFrontCount 3
-
 @interface HomePageViewModel()
 
 @property (nonatomic, strong) HomePageModel *model;
