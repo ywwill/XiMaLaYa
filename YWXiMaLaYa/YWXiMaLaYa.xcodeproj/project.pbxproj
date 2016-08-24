@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F81871D6C37AC00AA829F /* HomePageViewModel.m */; };
 		612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818A1D6C381200AA829F /* BaseViewModel.m */; };
+		612F818E1D6D323D00AA829F /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818D1D6D323D00AA829F /* TitleView.m */; };
+		617E62381D6D40C50036FBFC /* FindPutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E62371D6D40C50036FBFC /* FindPutCell.m */; };
+		617E623B1D6D40D40036FBFC /* DiscoveryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E623A1D6D40D40036FBFC /* DiscoveryCell.m */; };
+		617E623E1D6D40E10036FBFC /* SpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E623D1D6D40E10036FBFC /* SpecialCell.m */; };
+		617E62411D6D40FB0036FBFC /* ContentShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E62401D6D40FB0036FBFC /* ContentShowView.m */; };
+		617E62441D6D4BB20036FBFC /* FocusImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E62431D6D4BB20036FBFC /* FocusImageScrollView.m */; };
+		617E62471D6D75290036FBFC /* MBProgressHUD+YW.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E62461D6D75290036FBFC /* MBProgressHUD+YW.m */; };
 		6187695C1D6595640018B807 /* YWMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187695B1D6595640018B807 /* YWMeViewController.m */; };
 		6187695F1D6595860018B807 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187695E1D6595860018B807 /* SettingViewController.m */; };
 		618769621D6596340018B807 /* AttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769611D6596340018B807 /* AttentionViewController.m */; };
@@ -30,6 +37,7 @@
 		61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EA51D6AE2BA003371A0 /* HomePageNetManager.m */; };
 		61884EA91D6AE521003371A0 /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EA81D6AE521003371A0 /* HomePageModel.m */; };
 		61884EAC1D6AF340003371A0 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61884EAB1D6AF340003371A0 /* BaseModel.m */; };
+		61C317161D6D38BE009FBBA7 /* MoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C317151D6D38BE009FBBA7 /* MoreButton.m */; };
 		61C610441D658C2B00219E61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C610431D658C2B00219E61 /* main.m */; };
 		61C610471D658C2B00219E61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C610461D658C2B00219E61 /* AppDelegate.m */; };
 		61C6104F1D658C2B00219E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C6104E1D658C2B00219E61 /* Assets.xcassets */; };
@@ -63,6 +71,20 @@
 		612F81871D6C37AC00AA829F /* HomePageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewModel.m; sourceTree = "<group>"; };
 		612F81891D6C381200AA829F /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		612F818A1D6C381200AA829F /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		612F818C1D6D323D00AA829F /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleView.h; sourceTree = "<group>"; };
+		612F818D1D6D323D00AA829F /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
+		617E62361D6D40C50036FBFC /* FindPutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPutCell.h; sourceTree = "<group>"; };
+		617E62371D6D40C50036FBFC /* FindPutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPutCell.m; sourceTree = "<group>"; };
+		617E62391D6D40D40036FBFC /* DiscoveryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryCell.h; sourceTree = "<group>"; };
+		617E623A1D6D40D40036FBFC /* DiscoveryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryCell.m; sourceTree = "<group>"; };
+		617E623C1D6D40E10036FBFC /* SpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialCell.h; sourceTree = "<group>"; };
+		617E623D1D6D40E10036FBFC /* SpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialCell.m; sourceTree = "<group>"; };
+		617E623F1D6D40FB0036FBFC /* ContentShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentShowView.h; sourceTree = "<group>"; };
+		617E62401D6D40FB0036FBFC /* ContentShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentShowView.m; sourceTree = "<group>"; };
+		617E62421D6D4BB20036FBFC /* FocusImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusImageScrollView.h; sourceTree = "<group>"; };
+		617E62431D6D4BB20036FBFC /* FocusImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusImageScrollView.m; sourceTree = "<group>"; };
+		617E62451D6D75290036FBFC /* MBProgressHUD+YW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YW.h"; sourceTree = "<group>"; };
+		617E62461D6D75290036FBFC /* MBProgressHUD+YW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YW.m"; sourceTree = "<group>"; };
 		618769591D65926A0018B807 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		6187695A1D6595640018B807 /* YWMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWMeViewController.h; sourceTree = "<group>"; };
 		6187695B1D6595640018B807 /* YWMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWMeViewController.m; sourceTree = "<group>"; };
@@ -105,6 +127,8 @@
 		61884EA81D6AE521003371A0 /* HomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModel.m; sourceTree = "<group>"; };
 		61884EAA1D6AF340003371A0 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		61884EAB1D6AF340003371A0 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		61C317141D6D38BE009FBBA7 /* MoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreButton.h; sourceTree = "<group>"; };
+		61C317151D6D38BE009FBBA7 /* MoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreButton.m; sourceTree = "<group>"; };
 		61C6103F1D658C2B00219E61 /* YWXiMaLaYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YWXiMaLaYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C610431D658C2B00219E61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61C610451D658C2B00219E61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +177,21 @@
 				668271AD467F1D37F7338E88 /* libPods-YWXiMaLaYa.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		617E62351D6D40910036FBFC /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				617E62361D6D40C50036FBFC /* FindPutCell.h */,
+				617E62371D6D40C50036FBFC /* FindPutCell.m */,
+				617E62391D6D40D40036FBFC /* DiscoveryCell.h */,
+				617E623A1D6D40D40036FBFC /* DiscoveryCell.m */,
+				617E623C1D6D40E10036FBFC /* SpecialCell.h */,
+				617E623D1D6D40E10036FBFC /* SpecialCell.m */,
+				617E623F1D6D40FB0036FBFC /* ContentShowView.h */,
+				617E62401D6D40FB0036FBFC /* ContentShowView.m */,
+			);
+			name = Recommend;
 			sourceTree = "<group>";
 		};
 		618769441D65922E0018B807 /* Class */ = {
@@ -221,6 +260,7 @@
 		618769491D65922E0018B807 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				617E62351D6D40910036FBFC /* Recommend */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +338,12 @@
 		618769511D65922E0018B807 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				612F818C1D6D323D00AA829F /* TitleView.h */,
+				612F818D1D6D323D00AA829F /* TitleView.m */,
+				61C317141D6D38BE009FBBA7 /* MoreButton.h */,
+				61C317151D6D38BE009FBBA7 /* MoreButton.m */,
+				617E62421D6D4BB20036FBFC /* FocusImageScrollView.h */,
+				617E62431D6D4BB20036FBFC /* FocusImageScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +402,8 @@
 		618769571D6592340018B807 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				617E62451D6D75290036FBFC /* MBProgressHUD+YW.h */,
+				617E62461D6D75290036FBFC /* MBProgressHUD+YW.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -621,13 +669,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6187695C1D6595640018B807 /* YWMeViewController.m in Sources */,
+				617E623E1D6D40E10036FBFC /* SpecialCell.m in Sources */,
 				612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */,
+				617E623B1D6D40D40036FBFC /* DiscoveryCell.m in Sources */,
 				618769741D65A0060018B807 /* YWFindViewController.m in Sources */,
 				61C610471D658C2B00219E61 /* AppDelegate.m in Sources */,
 				61884EA31D6ADDBC003371A0 /* BaseNetManager.m in Sources */,
 				6187696E1D6596B70018B807 /* AlbumViewController.m in Sources */,
+				617E62441D6D4BB20036FBFC /* FocusImageScrollView.m in Sources */,
 				61C610441D658C2B00219E61 /* main.m in Sources */,
+				612F818E1D6D323D00AA829F /* TitleView.m in Sources */,
 				618769711D6596C90018B807 /* DownloadViewController.m in Sources */,
+				617E62381D6D40C50036FBFC /* FindPutCell.m in Sources */,
+				617E62471D6D75290036FBFC /* MBProgressHUD+YW.m in Sources */,
 				61884EA91D6AE521003371A0 /* HomePageModel.m in Sources */,
 				6187697D1D65A0360018B807 /* LiveViewController.m in Sources */,
 				618769621D6596340018B807 /* AttentionViewController.m in Sources */,
@@ -635,9 +689,11 @@
 				6187696B1D6596A00018B807 /* YWDownloadViewController.m in Sources */,
 				618769771D65A01B0018B807 /* HomePageViewController.m in Sources */,
 				6187697A1D65A0280018B807 /* CategoryViewController.m in Sources */,
+				61C317161D6D38BE009FBBA7 /* MoreButton.m in Sources */,
 				61884EAC1D6AF340003371A0 /* BaseModel.m in Sources */,
 				618769831D65A0500018B807 /* AnchorViewController.m in Sources */,
 				6187695F1D6595860018B807 /* SettingViewController.m in Sources */,
+				617E62411D6D40FB0036FBFC /* ContentShowView.m in Sources */,
 				61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */,
 				612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */,
 				618769681D6596700018B807 /* YWSoundViewController.m in Sources */,

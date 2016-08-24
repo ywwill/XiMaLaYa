@@ -51,7 +51,7 @@
     }else{
         //热门推荐
         return self.model.hotRecommends.list[section - 3];
-        }
+    }
 }
 
 //section的title
@@ -101,7 +101,7 @@
         NSString *path = self.model.discoveryColumns.list[index].coverPath;
         return [NSURL URLWithString:path];
     }else{
-        path = self.model.hotRecommends.list[section-3].list[index].coverLarge;
+        path = self.model.hotRecommends.list[section - 3].list[index].coverLarge;
     }
     return [NSURL URLWithString:path];
     
@@ -196,14 +196,14 @@
 #pragma mark - 跳转传值
 - (NSInteger)categoryIdForSection:(NSInteger)section {
     if (section >=3 && section<= 15) {
-        return self.model.hotRecommends.list[section-3].categoryId;
+        return self.model.hotRecommends.list[section - 3].categoryId;
     } else {
         return 0;
     }
 }
 - (NSString *)contentTypeForSection:(NSInteger)section {
     if (section >=3 && section<= 15) {
-        return self.model.hotRecommends.list[section-3].contentType;
+        return self.model.hotRecommends.list[section - 3].contentType;
     } else {
         return nil;
     }

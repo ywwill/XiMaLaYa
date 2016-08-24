@@ -11,6 +11,9 @@
 
 @interface HomePageViewModel : BaseViewModel
 
+//得到所有的数据
+- (void)getDataComletionHandle:(void (^)(NSError *))complete;
+
 /* 小编推荐 editorRecommendAlbums*/
 
 /* 存储发现新奇栏 discoveryColumns 只显示不能选择 */
@@ -18,6 +21,7 @@
 
 /* 存储精品听单 只显示不能选择 */
 @property (nonatomic, assign) NSInteger specialCount;
+
 
 /* 存储热门hotRecommends.list 各个分类栏 */
 @property (nonatomic, strong) NSArray *hotRecmmendsArr;
