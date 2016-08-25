@@ -7,6 +7,8 @@
 //
 
 #import "HomePageViewController.h"
+#import "DetailViewController.h"
+
 #import "HomePageViewModel.h"
 
 #import "TitleView.h"//section视图
@@ -27,6 +29,7 @@
 
 @property (nonatomic,strong) HomePageViewModel *homeVM;
 
+//分类栏点击“更多”按钮需要传递的值
 @property (nonatomic, assign) NSInteger categoryId;
 @property (nonatomic, strong) NSString *type;
 
@@ -151,7 +154,7 @@
         }else{
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
-            cell.imageView.image = [UIImage imageNamed:@"live"];
+            cell.imageView.image = [UIImage imageNamed:@"find_gotocate"];
             cell.textLabel.text = [self.homeVM entrancesTitle];
         }
         return cell;
@@ -208,6 +211,7 @@
         TitleView *moreView = [[TitleView alloc]initWithTitle:[self.homeVM mainTitleForSection:section] hasMore:[self.homeVM hasMoreForSection:section]];
         
         moreView.tag = section;
+        
         moreView.delegate = self;
         
         return moreView;
@@ -235,15 +239,33 @@
     return (section < self.homeVM.section-2 ) ? 35 : 5;
 }
 
-#pragma mark - ContentShowViewDelegate代理实现跳转
+#pragma mark - ContentShowViewDelegate代理实现详情跳转
+
 - (void)contentShowViewClick:(NSInteger)tag {
 
+    //分区
+    NSInteger section = tag / 10;
+    
+    //第几个按钮
+    NSInteger row = tag % 10;
+    
+    //跳转并传递titl，albumId
+    DetailViewController *detailVC = [[DetailViewController alloc]initWithAlbumId:[self.homeVM albumIdForSection:section index:row] title:[self.homeVM mainTitleForSection:section]];
+    
+    detailVC.hidesBottomBarWhenPushed = YES;
+    self.navigationController.navigationBar.hidden = YES;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 
 #pragma mark - 点击更多按钮代理实现跳转
 - (void)titleViewDidClick:(NSInteger)tag {
+    
+    //更多 按钮的功能 待定。。。
 
+    _categoryId = [self.homeVM categoryIdForSection:tag];
+    _type = [self.homeVM contentTypeForSection:tag];
+    
 }
 
 #pragma mark - 懒加载

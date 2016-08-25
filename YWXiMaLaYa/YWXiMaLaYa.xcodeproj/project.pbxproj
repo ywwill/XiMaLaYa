@@ -10,6 +10,7 @@
 		612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F81871D6C37AC00AA829F /* HomePageViewModel.m */; };
 		612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818A1D6C381200AA829F /* BaseViewModel.m */; };
 		612F818E1D6D323D00AA829F /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818D1D6D323D00AA829F /* TitleView.m */; };
+		613AB5A61D6EE55300A43568 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 613AB5A51D6EE55300A43568 /* DetailViewController.m */; };
 		617E62381D6D40C50036FBFC /* FindPutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E62371D6D40C50036FBFC /* FindPutCell.m */; };
 		617E623B1D6D40D40036FBFC /* DiscoveryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E623A1D6D40D40036FBFC /* DiscoveryCell.m */; };
 		617E623E1D6D40E10036FBFC /* SpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E623D1D6D40E10036FBFC /* SpecialCell.m */; };
@@ -73,6 +74,8 @@
 		612F818A1D6C381200AA829F /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		612F818C1D6D323D00AA829F /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleView.h; sourceTree = "<group>"; };
 		612F818D1D6D323D00AA829F /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
+		613AB5A41D6EE55300A43568 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		613AB5A51D6EE55300A43568 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		617E62361D6D40C50036FBFC /* FindPutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPutCell.h; sourceTree = "<group>"; };
 		617E62371D6D40C50036FBFC /* FindPutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPutCell.m; sourceTree = "<group>"; };
 		617E62391D6D40D40036FBFC /* DiscoveryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryCell.h; sourceTree = "<group>"; };
@@ -313,6 +316,8 @@
 				618769851D65A2000018B807 /* YWNavigationController.m */,
 				618769871D65A2300018B807 /* YWTabBarController.h */,
 				618769881D65A2300018B807 /* YWTabBarController.m */,
+				613AB5A41D6EE55300A43568 /* DetailViewController.h */,
+				613AB5A51D6EE55300A43568 /* DetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -697,6 +702,7 @@
 				61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */,
 				612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */,
 				618769681D6596700018B807 /* YWSoundViewController.m in Sources */,
+				613AB5A61D6EE55300A43568 /* DetailViewController.m in Sources */,
 				618769651D65964A0018B807 /* HistoryViewController.m in Sources */,
 				618769801D65A0430018B807 /* RankingViewController.m in Sources */,
 				618769891D65A2300018B807 /* YWTabBarController.m in Sources */,

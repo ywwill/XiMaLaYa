@@ -41,13 +41,13 @@
 // 缩略图
 - (NSURL *)coverURLForSection:(NSInteger)section index:(NSInteger)index;
 
-// 蒙版标题
+// cell上蒙版标题
 - (NSString *)titleForSection:(NSInteger)section index:(NSInteger)index;
 
 // 详情
 - (NSString *)trackTitleForSection:(NSInteger)section index:(NSInteger)index;
 
-// 跳转键
+// 选择cell后，传递的值
 - (NSInteger)albumIdForSection:(NSInteger)section index:(NSInteger)index;
 
 // 节目集数 -- 下一个tableView的row
@@ -72,7 +72,8 @@
 /** 滚动展示栏(焦点图)的图片地址 */
 - (NSURL *)focusImgURLForIndex:(NSInteger)index;
 
-#pragma mark - 跳转需要值
+
+/* 分类点击“更多”后需要传递的值 */
 - (NSInteger)categoryIdForSection:(NSInteger)section;
 - (NSString *)contentTypeForSection:(NSInteger)section;
 
