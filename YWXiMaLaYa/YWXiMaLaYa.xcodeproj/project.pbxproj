@@ -11,6 +11,11 @@
 		612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818A1D6C381200AA829F /* BaseViewModel.m */; };
 		612F818E1D6D323D00AA829F /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818D1D6D323D00AA829F /* TitleView.m */; };
 		613AB5A61D6EE55300A43568 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 613AB5A51D6EE55300A43568 /* DetailViewController.m */; };
+		6155A8371D6FD20000E9E5D0 /* PicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A8361D6FD20000E9E5D0 /* PicView.m */; };
+		6155A83A1D6FD4A000E9E5D0 /* AlbumHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A8391D6FD4A000E9E5D0 /* AlbumHeaderView.m */; };
+		6155A83D1D6FD59800E9E5D0 /* DescribleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A83C1D6FD59800E9E5D0 /* DescribleView.m */; };
+		6155A8401D6FD5B000E9E5D0 /* IconNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A83F1D6FD5B000E9E5D0 /* IconNameView.m */; };
+		6155A8431D6FE86500E9E5D0 /* MusicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A8421D6FE86500E9E5D0 /* MusicDetailCell.m */; };
 		617E62381D6D40C50036FBFC /* FindPutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E62371D6D40C50036FBFC /* FindPutCell.m */; };
 		617E623B1D6D40D40036FBFC /* DiscoveryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E623A1D6D40D40036FBFC /* DiscoveryCell.m */; };
 		617E623E1D6D40E10036FBFC /* SpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E623D1D6D40E10036FBFC /* SpecialCell.m */; };
@@ -76,6 +81,16 @@
 		612F818D1D6D323D00AA829F /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
 		613AB5A41D6EE55300A43568 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		613AB5A51D6EE55300A43568 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		6155A8351D6FD20000E9E5D0 /* PicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicView.h; sourceTree = "<group>"; };
+		6155A8361D6FD20000E9E5D0 /* PicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicView.m; sourceTree = "<group>"; };
+		6155A8381D6FD4A000E9E5D0 /* AlbumHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumHeaderView.h; sourceTree = "<group>"; };
+		6155A8391D6FD4A000E9E5D0 /* AlbumHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumHeaderView.m; sourceTree = "<group>"; };
+		6155A83B1D6FD59800E9E5D0 /* DescribleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribleView.h; sourceTree = "<group>"; };
+		6155A83C1D6FD59800E9E5D0 /* DescribleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribleView.m; sourceTree = "<group>"; };
+		6155A83E1D6FD5B000E9E5D0 /* IconNameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconNameView.h; sourceTree = "<group>"; };
+		6155A83F1D6FD5B000E9E5D0 /* IconNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconNameView.m; sourceTree = "<group>"; };
+		6155A8411D6FE86500E9E5D0 /* MusicDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicDetailCell.h; sourceTree = "<group>"; };
+		6155A8421D6FE86500E9E5D0 /* MusicDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicDetailCell.m; sourceTree = "<group>"; };
 		617E62361D6D40C50036FBFC /* FindPutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPutCell.h; sourceTree = "<group>"; };
 		617E62371D6D40C50036FBFC /* FindPutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPutCell.m; sourceTree = "<group>"; };
 		617E62391D6D40D40036FBFC /* DiscoveryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryCell.h; sourceTree = "<group>"; };
@@ -343,12 +358,22 @@
 		618769511D65922E0018B807 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6155A8411D6FE86500E9E5D0 /* MusicDetailCell.h */,
+				6155A8421D6FE86500E9E5D0 /* MusicDetailCell.m */,
 				612F818C1D6D323D00AA829F /* TitleView.h */,
 				612F818D1D6D323D00AA829F /* TitleView.m */,
 				61C317141D6D38BE009FBBA7 /* MoreButton.h */,
 				61C317151D6D38BE009FBBA7 /* MoreButton.m */,
 				617E62421D6D4BB20036FBFC /* FocusImageScrollView.h */,
 				617E62431D6D4BB20036FBFC /* FocusImageScrollView.m */,
+				6155A8351D6FD20000E9E5D0 /* PicView.h */,
+				6155A8361D6FD20000E9E5D0 /* PicView.m */,
+				6155A8381D6FD4A000E9E5D0 /* AlbumHeaderView.h */,
+				6155A8391D6FD4A000E9E5D0 /* AlbumHeaderView.m */,
+				6155A83B1D6FD59800E9E5D0 /* DescribleView.h */,
+				6155A83C1D6FD59800E9E5D0 /* DescribleView.m */,
+				6155A83E1D6FD5B000E9E5D0 /* IconNameView.h */,
+				6155A83F1D6FD5B000E9E5D0 /* IconNameView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -691,16 +716,21 @@
 				6187697D1D65A0360018B807 /* LiveViewController.m in Sources */,
 				618769621D6596340018B807 /* AttentionViewController.m in Sources */,
 				618769861D65A2000018B807 /* YWNavigationController.m in Sources */,
+				6155A8401D6FD5B000E9E5D0 /* IconNameView.m in Sources */,
 				6187696B1D6596A00018B807 /* YWDownloadViewController.m in Sources */,
 				618769771D65A01B0018B807 /* HomePageViewController.m in Sources */,
+				6155A83A1D6FD4A000E9E5D0 /* AlbumHeaderView.m in Sources */,
 				6187697A1D65A0280018B807 /* CategoryViewController.m in Sources */,
 				61C317161D6D38BE009FBBA7 /* MoreButton.m in Sources */,
 				61884EAC1D6AF340003371A0 /* BaseModel.m in Sources */,
 				618769831D65A0500018B807 /* AnchorViewController.m in Sources */,
 				6187695F1D6595860018B807 /* SettingViewController.m in Sources */,
+				6155A83D1D6FD59800E9E5D0 /* DescribleView.m in Sources */,
 				617E62411D6D40FB0036FBFC /* ContentShowView.m in Sources */,
 				61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */,
+				6155A8371D6FD20000E9E5D0 /* PicView.m in Sources */,
 				612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */,
+				6155A8431D6FE86500E9E5D0 /* MusicDetailCell.m in Sources */,
 				618769681D6596700018B807 /* YWSoundViewController.m in Sources */,
 				613AB5A61D6EE55300A43568 /* DetailViewController.m in Sources */,
 				618769651D65964A0018B807 /* HistoryViewController.m in Sources */,
