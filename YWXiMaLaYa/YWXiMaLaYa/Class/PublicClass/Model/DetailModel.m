@@ -11,16 +11,21 @@
 @implementation DetailModel
 
 @end
-//
-//@implementation YAlbum
-//
-//@end
-//
-//@implementation YTracks
-//
-//+ (NSDictionary *)objectClassInArray{
-//
-//    return @{@"list" : [YTracks_List class]};
-//}
-//
-//@end
+
+@implementation Album
+
+@end
+
+@implementation Tracks
+
++ (NSDictionary *)objectClassInArray{
+
+    return @{@"list" : [Tracks_List class]};
+}
+
+@end
+
+
+@implementation Tracks_List
+
+@end
