@@ -48,12 +48,13 @@
     [super viewDidLoad];
 
     [MBProgressHUD showMessage:@"正在努力加载..."];
+
     [self.homeVM getDataComletionHandle:^(NSError *error) {
         [MBProgressHUD hideHUD];
         [self.tableView reloadData];
     }];
-}
 
+}
 #pragma mark - iCarousel代理方法
 - (NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel{
 

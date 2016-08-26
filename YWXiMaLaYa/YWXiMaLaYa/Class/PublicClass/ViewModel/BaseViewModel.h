@@ -8,8 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BaseViewModel : NSObject
+@protocol BaseViewModelDelegate <NSObject>
 
+@optional
+/* 获取数据 */
+- (void)getDataComletionHandle:(void (^)(NSError *))completed;
+
+/* 获取更多 */
+- (void)getMoreDataCompletionHandle:(void(^)(NSError *error))completed;
+
+/* 刷新 */
+- (void)refreshDataCompletionHandle:(void(^)(NSError *error))completed;
+
+/* 通过indexPath返回cell高 */
+- (CGFloat)cellHeightForIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+@interface BaseViewModel : NSObject<BaseViewModelDelegate>
 
 @property (nonatomic, strong) NSURLSessionDataTask *dataTask;
 

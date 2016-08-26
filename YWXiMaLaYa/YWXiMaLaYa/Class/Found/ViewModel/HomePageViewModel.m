@@ -21,7 +21,7 @@
 
 @implementation HomePageViewModel
 
-- (void)getDataComletionHandle:(void (^)(NSError *))complete{
+- (void)getDataComletionHandle:(void (^)(NSError *))completed{
 
     //responseObject转换为HomePageModel
     self.dataTask = [HomePageNetManager getHomePageIntroduceCompletionHandle:^(HomePageModel *responseObject, NSError *error) {
@@ -29,7 +29,7 @@
         self.model = responseObject;
         self.hotRecmmendsArr = responseObject.hotRecommends.list;
         self.section = _hotRecmmendsArr.count + yOtherSection;
-        complete(error);
+        completed(error);
     }];
 }
 

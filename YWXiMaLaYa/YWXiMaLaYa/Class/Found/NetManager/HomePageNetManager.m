@@ -28,7 +28,15 @@
 + (id)getHomePageIntroduceCompletionHandle:(void (^)(id, NSError *))completed{
 
     //获取数据，json转模型
-    return [self GET:YHomeURLPath parameters:@{YURLChannel, YURLVersion, YURLDevice, YURLSpecial, YURLActivity, YURLScale} completionHandle:^(id responseObject, NSError *error) {
+    return [self GET:YHomeURLPath parameters:@{
+                                               YURLChannel,
+                                               YURLVersion,
+                                               YURLDevice,
+                                               YURLSpecial,
+                                               YURLActivity,
+                                               YURLScale
+                                               }
+    completionHandle:^(id responseObject, NSError *error) {
         completed([HomePageModel mj_objectWithKeyValues:responseObject], error);
     }];
 }

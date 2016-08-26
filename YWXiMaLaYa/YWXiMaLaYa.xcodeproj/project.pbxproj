@@ -16,6 +16,10 @@
 		6155A83D1D6FD59800E9E5D0 /* DescribleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A83C1D6FD59800E9E5D0 /* DescribleView.m */; };
 		6155A8401D6FD5B000E9E5D0 /* IconNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A83F1D6FD5B000E9E5D0 /* IconNameView.m */; };
 		6155A8431D6FE86500E9E5D0 /* MusicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A8421D6FE86500E9E5D0 /* MusicDetailCell.m */; };
+		6155A8461D6FF15B00E9E5D0 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A8451D6FF15B00E9E5D0 /* DetailModel.m */; };
+		6155A8491D6FF5EE00E9E5D0 /* MoreContentNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A8481D6FF5EE00E9E5D0 /* MoreContentNetManager.m */; };
+		6155A84C1D70114600E9E5D0 /* MoreContentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A84B1D70114600E9E5D0 /* MoreContentViewModel.m */; };
+		6155A84F1D7019D200E9E5D0 /* TracksViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A84E1D7019D200E9E5D0 /* TracksViewModel.m */; };
 		617E62381D6D40C50036FBFC /* FindPutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E62371D6D40C50036FBFC /* FindPutCell.m */; };
 		617E623B1D6D40D40036FBFC /* DiscoveryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E623A1D6D40D40036FBFC /* DiscoveryCell.m */; };
 		617E623E1D6D40E10036FBFC /* SpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E623D1D6D40E10036FBFC /* SpecialCell.m */; };
@@ -91,6 +95,14 @@
 		6155A83F1D6FD5B000E9E5D0 /* IconNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconNameView.m; sourceTree = "<group>"; };
 		6155A8411D6FE86500E9E5D0 /* MusicDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicDetailCell.h; sourceTree = "<group>"; };
 		6155A8421D6FE86500E9E5D0 /* MusicDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicDetailCell.m; sourceTree = "<group>"; };
+		6155A8441D6FF15B00E9E5D0 /* DetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
+		6155A8451D6FF15B00E9E5D0 /* DetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
+		6155A8471D6FF5EE00E9E5D0 /* MoreContentNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreContentNetManager.h; sourceTree = "<group>"; };
+		6155A8481D6FF5EE00E9E5D0 /* MoreContentNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreContentNetManager.m; sourceTree = "<group>"; };
+		6155A84A1D70114600E9E5D0 /* MoreContentViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreContentViewModel.h; sourceTree = "<group>"; };
+		6155A84B1D70114600E9E5D0 /* MoreContentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreContentViewModel.m; sourceTree = "<group>"; };
+		6155A84D1D7019D200E9E5D0 /* TracksViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksViewModel.h; sourceTree = "<group>"; };
+		6155A84E1D7019D200E9E5D0 /* TracksViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksViewModel.m; sourceTree = "<group>"; };
 		617E62361D6D40C50036FBFC /* FindPutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPutCell.h; sourceTree = "<group>"; };
 		617E62371D6D40C50036FBFC /* FindPutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPutCell.m; sourceTree = "<group>"; };
 		617E62391D6D40D40036FBFC /* DiscoveryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryCell.h; sourceTree = "<group>"; };
@@ -342,6 +354,8 @@
 			children = (
 				61884EAA1D6AF340003371A0 /* BaseModel.h */,
 				61884EAB1D6AF340003371A0 /* BaseModel.m */,
+				6155A8441D6FF15B00E9E5D0 /* DetailModel.h */,
+				6155A8451D6FF15B00E9E5D0 /* DetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +365,8 @@
 			children = (
 				61884EA11D6ADDBC003371A0 /* BaseNetManager.h */,
 				61884EA21D6ADDBC003371A0 /* BaseNetManager.m */,
+				6155A8471D6FF5EE00E9E5D0 /* MoreContentNetManager.h */,
+				6155A8481D6FF5EE00E9E5D0 /* MoreContentNetManager.m */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -383,6 +399,10 @@
 			children = (
 				612F81891D6C381200AA829F /* BaseViewModel.h */,
 				612F818A1D6C381200AA829F /* BaseViewModel.m */,
+				6155A84A1D70114600E9E5D0 /* MoreContentViewModel.h */,
+				6155A84B1D70114600E9E5D0 /* MoreContentViewModel.m */,
+				6155A84D1D7019D200E9E5D0 /* TracksViewModel.h */,
+				6155A84E1D7019D200E9E5D0 /* TracksViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -699,6 +719,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6187695C1D6595640018B807 /* YWMeViewController.m in Sources */,
+				6155A84C1D70114600E9E5D0 /* MoreContentViewModel.m in Sources */,
 				617E623E1D6D40E10036FBFC /* SpecialCell.m in Sources */,
 				612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */,
 				617E623B1D6D40D40036FBFC /* DiscoveryCell.m in Sources */,
@@ -709,12 +730,15 @@
 				617E62441D6D4BB20036FBFC /* FocusImageScrollView.m in Sources */,
 				61C610441D658C2B00219E61 /* main.m in Sources */,
 				612F818E1D6D323D00AA829F /* TitleView.m in Sources */,
+				6155A8491D6FF5EE00E9E5D0 /* MoreContentNetManager.m in Sources */,
 				618769711D6596C90018B807 /* DownloadViewController.m in Sources */,
 				617E62381D6D40C50036FBFC /* FindPutCell.m in Sources */,
 				617E62471D6D75290036FBFC /* MBProgressHUD+YW.m in Sources */,
 				61884EA91D6AE521003371A0 /* HomePageModel.m in Sources */,
 				6187697D1D65A0360018B807 /* LiveViewController.m in Sources */,
 				618769621D6596340018B807 /* AttentionViewController.m in Sources */,
+				6155A8461D6FF15B00E9E5D0 /* DetailModel.m in Sources */,
+				6155A84F1D7019D200E9E5D0 /* TracksViewModel.m in Sources */,
 				618769861D65A2000018B807 /* YWNavigationController.m in Sources */,
 				6155A8401D6FD5B000E9E5D0 /* IconNameView.m in Sources */,
 				6187696B1D6596A00018B807 /* YWDownloadViewController.m in Sources */,

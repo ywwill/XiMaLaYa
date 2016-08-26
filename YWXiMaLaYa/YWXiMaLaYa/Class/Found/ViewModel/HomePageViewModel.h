@@ -11,9 +11,6 @@
 
 @interface HomePageViewModel : BaseViewModel
 
-//得到所有的数据
-- (void)getDataComletionHandle:(void (^)(NSError *))complete;
-
 /* 小编推荐 editorRecommendAlbums*/
 
 /* 存储发现新奇栏 discoveryColumns 只显示不能选择 */
