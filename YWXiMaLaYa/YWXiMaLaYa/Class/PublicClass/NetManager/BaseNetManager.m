@@ -17,7 +17,7 @@ static AFHTTPSessionManager *manager = nil;
     YDISPATCH_ONCE_BLOCK((^{
     
         manager = [AFHTTPSessionManager manager];
-        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"text/json", @"text/javascript", @"application/json", nil];
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"text/json",@"text/plain", @"text/javascript", @"application/json", nil];
     }));
     
     return manager;
@@ -26,7 +26,7 @@ static AFHTTPSessionManager *manager = nil;
 
 + (id)GET:(NSString *)path parameters:(NSDictionary *)params completionHandle:(void (^)(id, NSError *))completed{
 
-    YWLog(@"Request Path: %@, params %@", path, params);
+   // YWLog(@"Request Path: %@, params %@", path, params);
     return [[self defaultManager] GET:path parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         completed(responseObject, nil);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

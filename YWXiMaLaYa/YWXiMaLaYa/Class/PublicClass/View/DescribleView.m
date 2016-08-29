@@ -21,7 +21,7 @@
 
 - (UILabel *)describleLabel{
 
-    if (_describleLabel) {
+    if (!_describleLabel) {
         _describleLabel = [UILabel new];
         [self addSubview:_describleLabel];
         
@@ -39,13 +39,13 @@
 
 - (UIImageView *)arrow{
 
-    if (_arrow) {
+    if (!_arrow) {
         _arrow = [UIImageView new];
         [self addSubview:_arrow];
         
         [_arrow mas_makeConstraints:^(MASConstraintMaker *make) {
            
-            make.left.mas_equalTo(self.describleLabel.mas_right).mas_equalTo(0),
+            make.left.mas_equalTo(self.describleLabel.mas_right),
             make.centerY.mas_equalTo(self.describleLabel),
             make.size.mas_equalTo(CGSizeMake(10, 15));
         }];

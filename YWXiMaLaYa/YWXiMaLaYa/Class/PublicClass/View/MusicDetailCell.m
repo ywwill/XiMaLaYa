@@ -26,7 +26,7 @@
 }
 
 - (UIImageView *)coverIV {
-    if(_coverIV == nil) {
+    if(!_coverIV) {
         _coverIV = [[UIImageView alloc] init];
         [self.contentView addSubview:_coverIV];
         [_coverIV mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -47,7 +47,7 @@
 }
 
 - (UILabel *)titleLb {
-    if(_titleLb == nil) {
+    if(!_titleLb) {
         _titleLb = [[UILabel alloc] init];
         _titleLb.font = [UIFont systemFontOfSize:14];
         [self.contentView addSubview:_titleLb];
@@ -62,7 +62,7 @@
 }
 
 - (UILabel *)updateTimeLb {
-    if(_updateTimeLb == nil) {
+    if(!_updateTimeLb) {
         _updateTimeLb = [[UILabel alloc] init];
         [self.contentView addSubview:_updateTimeLb];
         _updateTimeLb.font=[UIFont systemFontOfSize:12];
@@ -70,7 +70,7 @@
         [_updateTimeLb mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(20);
             make.right.mas_equalTo(-10);
-            make.width.mas_equalTo(40);
+            make.width.mas_equalTo(60);
         }];
         _updateTimeLb.textAlignment=NSTextAlignmentRight;
     }
@@ -78,7 +78,7 @@
 }
 
 - (UILabel *)sourceLb {
-    if(_sourceLb == nil) {
+    if(!_sourceLb) {
         _sourceLb = [[UILabel alloc] init];
         [self.contentView addSubview:_sourceLb];
         [_sourceLb mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -93,7 +93,7 @@
 }
 
 - (UILabel *)playCountLb {
-    if(_playCountLb == nil) {
+    if(!_playCountLb) {
         _playCountLb = [[UILabel alloc] init];
         [self.contentView addSubview:_playCountLb];
         UIImageView *imageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sound_play"]];
@@ -115,7 +115,7 @@
 }
 
 - (UILabel *)favorCountLb {
-    if(_favorCountLb == nil) {
+    if(!_favorCountLb) {
         _favorCountLb = [[UILabel alloc] init];
         [self.contentView addSubview:_favorCountLb];
         UIImageView *imageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sound_likes_n"]];
@@ -136,7 +136,7 @@
 }
 
 - (UILabel *)commentCountLb {
-    if(_commentCountLb == nil) {
+    if(!_commentCountLb) {
         _commentCountLb = [[UILabel alloc] init];
         [self.contentView addSubview:_commentCountLb];
         UIImageView *imageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sound_comments"]];
@@ -157,7 +157,7 @@
 }
 
 - (UILabel *)durationLb {
-    if(_durationLb == nil) {
+    if(!_durationLb) {
         _durationLb = [[UILabel alloc] init];
         [self.contentView addSubview:_durationLb];
         UIImageView *imageView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sound_duration"]];
@@ -178,7 +178,7 @@
 }
 
 - (UIButton *)downloadBtn {
-    if(_downloadBtn == nil) {
+    if(!_downloadBtn) {
         _downloadBtn = [UIButton buttonWithType:0];
         [_downloadBtn setBackgroundImage:[UIImage imageNamed:@"cell_download"] forState:0];
         [_downloadBtn bk_addEventHandler:^(id sender) {

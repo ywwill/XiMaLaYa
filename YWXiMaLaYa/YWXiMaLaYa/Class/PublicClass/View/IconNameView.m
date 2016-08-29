@@ -22,7 +22,7 @@
 
 - (UIImageView *)icon{
 
-    if (_icon) {
+    if (!_icon) {
         _icon = [UIImageView new];
         [self addSubview:_icon];
         
@@ -42,7 +42,7 @@
 
 - (UILabel *)name{
 
-    if (_name) {
+    if (!_name) {
         _name = [UILabel new];
         [self addSubview:_name];
         
@@ -51,6 +51,10 @@
             make.left.mas_equalTo(self.icon.mas_right).mas_equalTo(5),
             make.centerY.mas_equalTo(self.icon);
         }];
+        
+        _name.textColor = [UIColor whiteColor];
+        _name.text = @"我是昵称";
+        _name.font = [UIFont boldSystemFontOfSize:14];
     }
     return _name;
 }

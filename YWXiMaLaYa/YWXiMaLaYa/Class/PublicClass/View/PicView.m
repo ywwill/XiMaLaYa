@@ -30,7 +30,7 @@
 
 - (UIImageView *)bgView{
 
-    if (_bgView) {
+    if (!_bgView) {
         _bgView = [UIImageView new];
         [self.coverView addSubview:_bgView];
         [_bgView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -49,10 +49,11 @@
         _playCountBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.bgView addSubview:_playCountBtn];
         
+        [_playCountBtn setImage:[UIImage imageNamed:@"album_playCountLogo"] forState:UIControlStateNormal];
         [_playCountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
             make.centerX.left.right.mas_equalTo(0),
-            make.bottom.mas_equalTo(0),
+            make.bottom.mas_equalTo(-10),
             make.height.mas_equalTo(10);
         }];
         _playCountBtn.titleLabel.font = [UIFont systemFontOfSize:12];

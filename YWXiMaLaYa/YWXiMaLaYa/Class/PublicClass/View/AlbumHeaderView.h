@@ -17,7 +17,7 @@
  *  详情页头部展示图，包含导航栏左右按钮
  */
 
-@protocol AlbumHeaderViewDeleate <NSObject>
+@protocol AlbumHeaderViewDelegate <NSObject>
 
 //返回按钮
 - (void)topLeftButtonDidClick;
@@ -43,7 +43,7 @@
 //根据标签数组，设置按钮标签
 - (void)setupTagsBtnWithTagNames:(NSArray *)tagNames;
 
-@property (nonatomic, weak) id <AlbumHeaderViewDeleate> delegate;
+@property (nonatomic, weak) id <AlbumHeaderViewDelegate> delegate;
 
 
 @end

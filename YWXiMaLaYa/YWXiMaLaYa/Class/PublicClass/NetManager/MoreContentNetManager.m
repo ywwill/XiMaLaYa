@@ -11,8 +11,6 @@
 
 // 小编推荐栏 更多跳转URL
 #define KURLEditor @"http://mobile.ximalaya.com/mobile/discovery/v1/recommend/editor"
-
-
 #define yURLDevice @"device":@"ios"
 #define yURLPosition @"position":@1
 

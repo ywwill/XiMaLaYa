@@ -77,7 +77,7 @@
 
 - (UIButton *)topLeftBtn{
 
-    if (_topLeftBtn) {
+    if (!_topLeftBtn) {
         _topLeftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [self addSubview:_topLeftBtn];
         
@@ -100,14 +100,14 @@
 
 - (UILabel *)title{
 
-    if (_title) {
+    if (!_title) {
         _title = [UILabel new];
         [self addSubview:_title];
         
         [_title mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.centerX.mas_equalTo(0),
-            make.centerY.mas_equalTo(self.topLeftBtn).mas_equalTo(0),
+            make.centerY.mas_equalTo(self.topLeftBtn),
             make.width.mas_lessThanOrEqualTo(250);
         }];
         _title.textColor = [UIColor whiteColor];
@@ -119,7 +119,7 @@
 
 - (UIButton *)topRightBtn{
 
-    if (_topRightBtn) {
+    if (!_topRightBtn) {
         _topRightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [self addSubview:_topRightBtn];
         
@@ -142,7 +142,7 @@
 
 - (PicView *)picView{
 
-    if (_picView) {
+    if (!_picView) {
         _picView = [PicView new];
         [self addSubview:_picView];
         
@@ -158,7 +158,7 @@
 
 - (IconNameView *)nameView{
 
-    if (_nameView) {
+    if (!_nameView) {
         _nameView = [IconNameView new];
         [self addSubview:_nameView];
         
@@ -175,15 +175,15 @@
 
 - (DescribleView *)describleView{
 
-    if (_describleView) {
+    if (!_describleView) {
         _describleView = [DescribleView new];
         [self addSubview:_describleView];
         
         [_describleView  mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.centerY.mas_equalTo(self.picView).mas_equalTo(0),
+            make.centerY.mas_equalTo(self.picView),
             make.leadingMargin.mas_equalTo(self.nameView),
-            make.right.mas_equalTo(10),
+            make.right.mas_equalTo(-10),
             make.height.mas_equalTo(30);
         }];
         _describleView.describleLabel.text = @"暂无简介";

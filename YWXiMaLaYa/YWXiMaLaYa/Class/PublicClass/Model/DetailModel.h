@@ -123,7 +123,7 @@
 
 @property (nonatomic, copy) NSString *smallLogo;
 
-@property (nonatomic, copy) NSString *albumTitle;
+//@property (nonatomic, copy) NSString *albumTitle;
 
 @property (nonatomic, copy) NSString *albumImage;
 

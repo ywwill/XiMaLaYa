@@ -7,8 +7,22 @@
 //
 
 #import "DetailViewController.h"
+#import "TracksViewModel.h"
 
-@interface DetailViewController ()
+//视图
+#import "AlbumHeaderView.h"
+#import "MusicDetailCell.h"
+
+#import <UIKit+AFNetworking.h>
+
+@interface DetailViewController ()<UITableViewDataSource, UITableViewDelegate, AlbumHeaderViewDelegate>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) AlbumHeaderView *infoView;
+@property (nonatomic, strong) TracksViewModel *tracksViewModel;
+
+//默认升序
+@property (nonatomic, assign) BOOL isAsc;
 
 @end
 
@@ -26,13 +40,136 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = YWRandomColor;
+    [self setUp];
 }
+
+- (void)viewWillDisappear:(BOOL)animated {
+    self.navigationController.navigationBar.hidden = NO;
+}
+
+
+//初始化
+- (void)setUp{
+    
+    _infoView = [[AlbumHeaderView alloc]initWithFrame:CGRectMake(0, -170, SCREEN_WIDTH, 170)];
+    _infoView.delegate = self;
+    [self.tableView addSubview:_infoView];
+    
+    [self.tracksViewModel getDataComletionHandle:^(NSError *error) {
+        
+        [self.tableView reloadData];
+        
+        _infoView.title.text = self.tracksViewModel.albumTitle;
+        [_infoView.picView.coverView setImageWithURL:self.tracksViewModel.albumCoverURL];
+        
+        if (![self.tracksViewModel.albumPlays isEqualToString:@"0"]) {
+            [_infoView.picView.playCountBtn setTitle:self.tracksViewModel.albumPlays forState:UIControlStateNormal];
+        }else{
+            _infoView.picView.playCountBtn.hidden = YES;
+        
+        }
+        
+        //昵称和头像
+        _infoView.nameView.name.text = self.tracksViewModel.albumNickName;
+        [_infoView.nameView.icon setImageWithURL:self.tracksViewModel.albumIconURL];
+        
+        _infoView.describleView.describleLabel.text = self.tracksViewModel.albumDesc.length == 0 ? @"暂无简介" : self.tracksViewModel.albumDesc;
+        
+        [_infoView setupTagsBtnWithTagNames:self.tracksViewModel.tagsName];
+        
+        
+    }];
+
+}
+
+
+// 连带滚动方法，当下拉tableview时，infoView不会跟着向下滚动
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat y = scrollView.contentOffset.y;
+    if (y < -170) {
+        CGRect frame = _infoView.frame;
+        frame.origin.y = y;
+        frame.size.height = -y;
+        _infoView.frame = frame;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - UItableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+    return self.tracksViewModel.rowNumber;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    MusicDetailCell *musicCell = [tableView dequeueReusableCellWithIdentifier:@"MusicDetailCell"];
+    
+    [musicCell.coverIV setImageWithURL:[self.tracksViewModel coverURLForRow:indexPath.row] placeholderImage:[UIImage imageNamed:@"album_cover_bg"]];
+    
+    musicCell.titleLb.text = [self.tracksViewModel titleForRow:indexPath.row];
+    musicCell.sourceLb.text = [self.tracksViewModel nickNameForRow:indexPath.row];
+    musicCell.updateTimeLb.text = [self.tracksViewModel updateTimeForRow:indexPath.row];
+    musicCell.playCountLb.text = [self.tracksViewModel playCountFor:indexPath.row];
+    musicCell.durationLb.text = [self.tracksViewModel playTimeForRow:indexPath.row];
+    musicCell.favorCountLb.text = [self.tracksViewModel favorCountForRow:indexPath.row];
+    musicCell.commentCountLb.text = [self.tracksViewModel commentCountForRow:indexPath.row];
+    
+    return musicCell;
+}
+
+#pragma mark - AlbumHeaderView代理方法
+// 左边按钮点击后做的方法
+- (void)topLeftButtonDidClick {
+    [self.navigationController popViewControllerAnimated:NO];
+}
+
+// 右边按钮点击后做的方法 回到首页
+- (void)topRightButtonDidClick {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+#pragma mark - 懒加载
+
+- (TracksViewModel *)tracksViewModel{
+
+    if (!_tracksViewModel) {
+        _tracksViewModel = [[TracksViewModel alloc]initWithAlbumId:_albumId title:_detailTitle isAsc:_isAsc];;
+    }
+    return _tracksViewModel;
+}
+
+- (UITableView *)tableView{
+    
+    if (!_tableView) {
+        // iOS7的状态栏（status bar）不再占用单独的20px, 所以要设置往下20px
+
+        CGRect frame = self.view.bounds;
+        frame.origin.y += 20;
+        
+        _tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
+        
+        //插入头视图
+        _tableView.contentInset = UIEdgeInsetsMake(170, 0, 0, 0);
+        
+        [self.view addSubview:_tableView];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+        [_tableView registerClass:[MusicDetailCell class] forCellReuseIdentifier:@"MusicDetailCell"];
+        
+        _tableView.rowHeight = 80;
+    }
+    return _tableView;
+}
+
 
 
 @end
