@@ -10,4 +10,6 @@
 
 @interface YWNavigationController : UINavigationController
 
+@property (nonatomic, assign) NSInteger *count;
+
 @end

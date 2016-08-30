@@ -46,6 +46,9 @@
 
 #define YWRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 
+//角度转弧度
+#define angleToRadian(x) (x/180.0*M_PI)
+
 //设置 view 圆角和边框
 #define YWViewBorderRadius(View, Radius, Width, Color)\
 \

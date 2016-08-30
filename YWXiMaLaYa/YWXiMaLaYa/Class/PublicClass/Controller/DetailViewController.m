@@ -124,10 +124,24 @@
     return musicCell;
 }
 
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    //通知播放，播放按钮旋转, 传递 封面URL 和 播放链接
+    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+    userInfo[@"coverURL"] = [self.tracksViewModel coverURLForRow:indexPath.row];
+    userInfo[@"musicURL"] = [self.tracksViewModel playURLForRow:indexPath.row];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"BeginPlay" object:nil userInfo:[userInfo copy]];
+}
+
 #pragma mark - AlbumHeaderView代理方法
 // 左边按钮点击后做的方法
 - (void)topLeftButtonDidClick {
-    [self.navigationController popViewControllerAnimated:NO];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 // 右边按钮点击后做的方法 回到首页

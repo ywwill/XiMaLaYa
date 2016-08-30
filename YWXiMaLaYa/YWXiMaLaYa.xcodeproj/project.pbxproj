@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6121A7A21D753191001E8215 /* YWPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121A7A11D753191001E8215 /* YWPlayView.m */; };
 		612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F81871D6C37AC00AA829F /* HomePageViewModel.m */; };
 		612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818A1D6C381200AA829F /* BaseViewModel.m */; };
 		612F818E1D6D323D00AA829F /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818D1D6D323D00AA829F /* TitleView.m */; };
@@ -77,6 +78,8 @@
 /* Begin PBXFileReference section */
 		184A66268665E443784E8BF8 /* Pods-YWXiMaLaYa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWXiMaLaYa.release.xcconfig"; path = "Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa.release.xcconfig"; sourceTree = "<group>"; };
 		5B2DDE3C71135161CD5CC3E9 /* Pods-YWXiMaLaYa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWXiMaLaYa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa.debug.xcconfig"; sourceTree = "<group>"; };
+		6121A7A01D753191001E8215 /* YWPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWPlayView.h; sourceTree = "<group>"; };
+		6121A7A11D753191001E8215 /* YWPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWPlayView.m; sourceTree = "<group>"; };
 		612F81861D6C37AC00AA829F /* HomePageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewModel.h; sourceTree = "<group>"; };
 		612F81871D6C37AC00AA829F /* HomePageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewModel.m; sourceTree = "<group>"; };
 		612F81891D6C381200AA829F /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
@@ -374,6 +377,8 @@
 		618769511D65922E0018B807 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6121A7A01D753191001E8215 /* YWPlayView.h */,
+				6121A7A11D753191001E8215 /* YWPlayView.m */,
 				6155A8411D6FE86500E9E5D0 /* MusicDetailCell.h */,
 				6155A8421D6FE86500E9E5D0 /* MusicDetailCell.m */,
 				612F818C1D6D323D00AA829F /* TitleView.h */,
@@ -726,6 +731,7 @@
 				618769741D65A0060018B807 /* YWFindViewController.m in Sources */,
 				61C610471D658C2B00219E61 /* AppDelegate.m in Sources */,
 				61884EA31D6ADDBC003371A0 /* BaseNetManager.m in Sources */,
+				6121A7A21D753191001E8215 /* YWPlayView.m in Sources */,
 				6187696E1D6596B70018B807 /* AlbumViewController.m in Sources */,
 				617E62441D6D4BB20036FBFC /* FocusImageScrollView.m in Sources */,
 				61C610441D658C2B00219E61 /* main.m in Sources */,

@@ -7,8 +7,14 @@
 //
 
 #import "YWNavigationController.h"
+#import "YWPlayView.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface YWNavigationController ()
+@interface YWNavigationController ()<PlayViewDelegate>
+
+@property (nonatomic, strong) YWPlayView *playView;
+
+@property (nonatomic, strong) AVPlayer *player;
 
 @end
 
@@ -18,21 +24,74 @@
     [super viewDidLoad];
    
     self.navigationBarHidden = YES;
+    
+    // 开启两个通知接收(HRMeViewController传入)
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hidePlayView:) name:@"hidePlayView" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showPlayView:) name:@"showPlayView" object:nil];
+    
+    //开启接收通知，播放URL 封面图片
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playingWithInfoDictionary:) name:@"BeginPlay" object:nil];
+    
+    self.playView = [[YWPlayView alloc] init];
+    self.playView.delegate = self;
+    
+    [self.view addSubview:_playView];
+    
+    [_playView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.bottom.mas_equalTo(0),
+        make.centerX.mas_equalTo(0),
+        make.width.mas_equalTo(65),
+        make.height.mas_equalTo(70);
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)playingWithInfoDictionary:(NSNotification *)notification{
+    
+    //专辑图
+    NSURL *coverURL = notification.userInfo[@"coverURL"];
+    NSURL *musicURL = notification.userInfo[@"musicURL"];
+    
+    [self.playView.contentImageView setImageWithURL:coverURL];
+    
+    //后台播放
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
+
+    //开始播放
+    _player = [AVPlayer playerWithURL:musicURL];
+    [_player play];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 隐藏图片
+- (void)hidePlayView:(NSNotification *)notification
+{
+    self.playView.hidden = YES;
 }
-*/
 
+// 显示图片
+- (void)showPlayView:(NSNotification *)notification
+{
+    self.playView.hidden = NO;
+}
+
+
+#pragma mark - PlayViewDelegate
+
+- (void)playButtonDidClick:(BOOL)selected{
+
+    if (selected) {
+        [_player play];
+    }else{
+        [_player pause];
+    }
+}
+
+
+- (void)dealloc{
+    //关闭通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end
