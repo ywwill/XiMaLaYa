@@ -33,4 +33,21 @@
     }];
 }
 
+
++ (id)getCaiCaiForAlbumId:(NSInteger)albumId idAsc:(BOOL)isAsc completionHandle:(void (^)(id, NSError *))completed{
+    
+    NSDictionary *param = @{@"albumId" : @(albumId),
+                            @"isAsc" : @(isAsc),
+                            yURLDevice,
+                            yURLPosition
+                            };
+    
+    NSString *path = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/1/20",albumId];
+    
+    return [self GET:path parameters:param completionHandle:^(id responseObject, NSError *error) {
+        completed([DetailModel mj_objectWithKeyValues:responseObject], error);
+    }];
+
+}
+
 @end

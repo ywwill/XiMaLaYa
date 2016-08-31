@@ -7,8 +7,7 @@
 //
 
 #import "YWSoundViewController.h"
-#import "AttentionViewController.h"
-#import "HistoryViewController.h"
+#import "CaiCaiViewController.h"
 
 @interface YWSoundViewController ()
 
@@ -27,15 +26,14 @@
     
     YDISPATCH_ONCE_BLOCK((^{
         
-        soundVC = [[YWSoundViewController alloc] initWithViewControllerClasses:[self viewControllers] andTheirTitles:@[@"关注", @"历史"]];
+        soundVC = [[YWSoundViewController alloc] initWithViewControllerClasses:[self viewControllers] andTheirTitles:@[@"采采"]];
         //        WMPageController的设置
         soundVC.menuViewStyle = WMMenuViewStyleLine;
         // 设置背景色
         soundVC.menuBGColor = [UIColor whiteColor];
-        // 选中时颜色
-        soundVC.titleColorSelected = [UIColor redColor];
+
         // 设置每个item的宽
-        soundVC.itemsWidths = @[@(SCREEN_WIDTH/2), @(SCREEN_WIDTH/2)];
+        soundVC.itemsWidths = @[@(SCREEN_WIDTH)];
         soundVC.progressHeight = 3.5;
         soundVC.menuHeight = 45;
         soundVC.viewFrame = CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT-20);
@@ -46,7 +44,7 @@
 
 // 存响应的控制器
 + (NSArray *)viewControllers {
-    return @[[AttentionViewController class], [HistoryViewController class]];
+    return @[[CaiCaiViewController class]];
 }
 
 - (void)didReceiveMemoryWarning {

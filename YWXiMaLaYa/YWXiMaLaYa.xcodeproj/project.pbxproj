@@ -11,6 +11,9 @@
 		612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F81871D6C37AC00AA829F /* HomePageViewModel.m */; };
 		612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818A1D6C381200AA829F /* BaseViewModel.m */; };
 		612F818E1D6D323D00AA829F /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818D1D6D323D00AA829F /* TitleView.m */; };
+		6131B57B1D76769700EE5369 /* CaicaiViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6131B57A1D76769700EE5369 /* CaicaiViewModel.m */; };
+		6131B5851D76839B00EE5369 /* CaiCaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6131B5821D76839B00EE5369 /* CaiCaiViewController.m */; };
+		6131B5861D76839B00EE5369 /* YWSoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6131B5841D76839B00EE5369 /* YWSoundViewController.m */; };
 		613AB5A61D6EE55300A43568 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 613AB5A51D6EE55300A43568 /* DetailViewController.m */; };
 		6155A8371D6FD20000E9E5D0 /* PicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A8361D6FD20000E9E5D0 /* PicView.m */; };
 		6155A83A1D6FD4A000E9E5D0 /* AlbumHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155A8391D6FD4A000E9E5D0 /* AlbumHeaderView.m */; };
@@ -29,9 +32,6 @@
 		617E62471D6D75290036FBFC /* MBProgressHUD+YW.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E62461D6D75290036FBFC /* MBProgressHUD+YW.m */; };
 		6187695C1D6595640018B807 /* YWMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187695B1D6595640018B807 /* YWMeViewController.m */; };
 		6187695F1D6595860018B807 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187695E1D6595860018B807 /* SettingViewController.m */; };
-		618769621D6596340018B807 /* AttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769611D6596340018B807 /* AttentionViewController.m */; };
-		618769651D65964A0018B807 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769641D65964A0018B807 /* HistoryViewController.m */; };
-		618769681D6596700018B807 /* YWSoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769671D6596700018B807 /* YWSoundViewController.m */; };
 		6187696B1D6596A00018B807 /* YWDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187696A1D6596A00018B807 /* YWDownloadViewController.m */; };
 		6187696E1D6596B70018B807 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187696D1D6596B70018B807 /* AlbumViewController.m */; };
 		618769711D6596C90018B807 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769701D6596C90018B807 /* DownloadViewController.m */; };
@@ -86,6 +86,12 @@
 		612F818A1D6C381200AA829F /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		612F818C1D6D323D00AA829F /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleView.h; sourceTree = "<group>"; };
 		612F818D1D6D323D00AA829F /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
+		6131B5791D76769700EE5369 /* CaicaiViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaicaiViewModel.h; sourceTree = "<group>"; };
+		6131B57A1D76769700EE5369 /* CaicaiViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaicaiViewModel.m; sourceTree = "<group>"; };
+		6131B5811D76839B00EE5369 /* CaiCaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaiCaiViewController.h; sourceTree = "<group>"; };
+		6131B5821D76839B00EE5369 /* CaiCaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaiCaiViewController.m; sourceTree = "<group>"; };
+		6131B5831D76839B00EE5369 /* YWSoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWSoundViewController.h; sourceTree = "<group>"; };
+		6131B5841D76839B00EE5369 /* YWSoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWSoundViewController.m; sourceTree = "<group>"; };
 		613AB5A41D6EE55300A43568 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		613AB5A51D6EE55300A43568 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		6155A8351D6FD20000E9E5D0 /* PicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicView.h; sourceTree = "<group>"; };
@@ -123,12 +129,6 @@
 		6187695B1D6595640018B807 /* YWMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWMeViewController.m; sourceTree = "<group>"; };
 		6187695D1D6595860018B807 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		6187695E1D6595860018B807 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		618769601D6596340018B807 /* AttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttentionViewController.h; sourceTree = "<group>"; };
-		618769611D6596340018B807 /* AttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttentionViewController.m; sourceTree = "<group>"; };
-		618769631D65964A0018B807 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
-		618769641D65964A0018B807 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
-		618769661D6596700018B807 /* YWSoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWSoundViewController.h; sourceTree = "<group>"; };
-		618769671D6596700018B807 /* YWSoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWSoundViewController.m; sourceTree = "<group>"; };
 		618769691D6596A00018B807 /* YWDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWDownloadViewController.h; sourceTree = "<group>"; };
 		6187696A1D6596A00018B807 /* YWDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWDownloadViewController.m; sourceTree = "<group>"; };
 		6187696C1D6596B70018B807 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
@@ -212,6 +212,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6131B57F1D76839B00EE5369 /* Caicai */ = {
+			isa = PBXGroup;
+			children = (
+				6131B5801D76839B00EE5369 /* Controller */,
+			);
+			path = Caicai;
+			sourceTree = "<group>";
+		};
+		6131B5801D76839B00EE5369 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6131B5831D76839B00EE5369 /* YWSoundViewController.h */,
+				6131B5841D76839B00EE5369 /* YWSoundViewController.m */,
+				6131B5811D76839B00EE5369 /* CaiCaiViewController.h */,
+				6131B5821D76839B00EE5369 /* CaiCaiViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		617E62351D6D40910036FBFC /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,9 +253,9 @@
 				61C610461D658C2B00219E61 /* AppDelegate.m */,
 				6187694D1D65922E0018B807 /* PublicClass */,
 				618769451D65922E0018B807 /* Found */,
+				6131B57F1D76839B00EE5369 /* Caicai */,
 				6187694B1D65922E0018B807 /* Me */,
 				618769531D65922E0018B807 /* 下载听 */,
-				618769551D65922E0018B807 /* 定制听 */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -408,6 +427,8 @@
 				6155A84B1D70114600E9E5D0 /* MoreContentViewModel.m */,
 				6155A84D1D7019D200E9E5D0 /* TracksViewModel.h */,
 				6155A84E1D7019D200E9E5D0 /* TracksViewModel.m */,
+				6131B5791D76769700EE5369 /* CaicaiViewModel.h */,
+				6131B57A1D76769700EE5369 /* CaicaiViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -429,27 +450,6 @@
 				6187696D1D6596B70018B807 /* AlbumViewController.m */,
 				6187696F1D6596C90018B807 /* DownloadViewController.h */,
 				618769701D6596C90018B807 /* DownloadViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		618769551D65922E0018B807 /* 定制听 */ = {
-			isa = PBXGroup;
-			children = (
-				618769561D65922E0018B807 /* Controller */,
-			);
-			path = "定制听";
-			sourceTree = "<group>";
-		};
-		618769561D65922E0018B807 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				618769661D6596700018B807 /* YWSoundViewController.h */,
-				618769671D6596700018B807 /* YWSoundViewController.m */,
-				618769601D6596340018B807 /* AttentionViewController.h */,
-				618769611D6596340018B807 /* AttentionViewController.m */,
-				618769631D65964A0018B807 /* HistoryViewController.h */,
-				618769641D65964A0018B807 /* HistoryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -735,6 +735,7 @@
 				6187696E1D6596B70018B807 /* AlbumViewController.m in Sources */,
 				617E62441D6D4BB20036FBFC /* FocusImageScrollView.m in Sources */,
 				61C610441D658C2B00219E61 /* main.m in Sources */,
+				6131B5851D76839B00EE5369 /* CaiCaiViewController.m in Sources */,
 				612F818E1D6D323D00AA829F /* TitleView.m in Sources */,
 				6155A8491D6FF5EE00E9E5D0 /* MoreContentNetManager.m in Sources */,
 				618769711D6596C90018B807 /* DownloadViewController.m in Sources */,
@@ -742,7 +743,6 @@
 				617E62471D6D75290036FBFC /* MBProgressHUD+YW.m in Sources */,
 				61884EA91D6AE521003371A0 /* HomePageModel.m in Sources */,
 				6187697D1D65A0360018B807 /* LiveViewController.m in Sources */,
-				618769621D6596340018B807 /* AttentionViewController.m in Sources */,
 				6155A8461D6FF15B00E9E5D0 /* DetailModel.m in Sources */,
 				6155A84F1D7019D200E9E5D0 /* TracksViewModel.m in Sources */,
 				618769861D65A2000018B807 /* YWNavigationController.m in Sources */,
@@ -753,17 +753,17 @@
 				6187697A1D65A0280018B807 /* CategoryViewController.m in Sources */,
 				61C317161D6D38BE009FBBA7 /* MoreButton.m in Sources */,
 				61884EAC1D6AF340003371A0 /* BaseModel.m in Sources */,
+				6131B5861D76839B00EE5369 /* YWSoundViewController.m in Sources */,
 				618769831D65A0500018B807 /* AnchorViewController.m in Sources */,
 				6187695F1D6595860018B807 /* SettingViewController.m in Sources */,
 				6155A83D1D6FD59800E9E5D0 /* DescribleView.m in Sources */,
 				617E62411D6D40FB0036FBFC /* ContentShowView.m in Sources */,
+				6131B57B1D76769700EE5369 /* CaicaiViewModel.m in Sources */,
 				61884EA61D6AE2BA003371A0 /* HomePageNetManager.m in Sources */,
 				6155A8371D6FD20000E9E5D0 /* PicView.m in Sources */,
 				612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */,
 				6155A8431D6FE86500E9E5D0 /* MusicDetailCell.m in Sources */,
-				618769681D6596700018B807 /* YWSoundViewController.m in Sources */,
 				613AB5A61D6EE55300A43568 /* DetailViewController.m in Sources */,
-				618769651D65964A0018B807 /* HistoryViewController.m in Sources */,
 				618769801D65A0430018B807 /* RankingViewController.m in Sources */,
 				618769891D65A2300018B807 /* YWTabBarController.m in Sources */,
 			);

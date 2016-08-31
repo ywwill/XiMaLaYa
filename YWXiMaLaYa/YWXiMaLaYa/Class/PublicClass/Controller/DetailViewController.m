@@ -162,7 +162,6 @@
 - (UITableView *)tableView{
     
     if (!_tableView) {
-        // iOS7的状态栏（status bar）不再占用单独的20px, 所以要设置往下20px
 
         CGRect frame = self.view.bounds;
         frame.origin.y += 20;
