@@ -7,13 +7,15 @@
 //
 
 #import "YWNavigationController.h"
-#import "YWPlayView.h"
 #import <AVFoundation/AVFoundation.h>
+#import "YWPlayView.h"
+#import "YWPlayer.h"
 
 @interface YWNavigationController ()<PlayViewDelegate>
 
 @property (nonatomic, strong) YWPlayView *playView;
 
+//@property (nonatomic, strong) YWPlayer *player;
 @property (nonatomic, strong) AVPlayer *player;
 
 @end
@@ -55,13 +57,17 @@
     
     [self.playView.contentImageView setImageWithURL:coverURL];
     
+    //自定义播放器，暂停和播放有bug
+   // _player = [[YWPlayer alloc] initWithURL:musicURL];
+    
+    
+    
+    _player = [[AVPlayer alloc] initWithURL:musicURL];;
     //后台播放
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
 
     [[AVAudioSession sharedInstance] setActive:YES error:nil];
 
-    //开始播放
-    _player = [AVPlayer playerWithURL:musicURL];
     [_player play];
 }
 
@@ -81,14 +87,13 @@
 #pragma mark - PlayViewDelegate
 
 - (void)playButtonDidClick:(BOOL)selected{
-
+    
     if (selected) {
         [_player play];
     }else{
         [_player pause];
     }
 }
-
 
 - (void)dealloc{
     //关闭通知

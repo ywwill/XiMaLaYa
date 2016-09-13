@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		449B46BB1D87E8AA0038CAF4 /* NSURL+YWLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46BA1D87E8AA0038CAF4 /* NSURL+YWLoad.m */; };
+		449B46BE1D87E8E70038CAF4 /* NSString+YWLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46BD1D87E8E70038CAF4 /* NSString+YWLoad.m */; };
+		449B46C21D87E98C0038CAF4 /* YWPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46C11D87E98C0038CAF4 /* YWPlayer.m */; };
+		449B46C51D87E9A70038CAF4 /* YWResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46C41D87E9A70038CAF4 /* YWResourceLoader.m */; };
+		449B46C81D87E9BA0038CAF4 /* YWRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46C71D87E9BA0038CAF4 /* YWRequestTask.m */; };
+		449B46CB1D87E9CB0038CAF4 /* YWFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46CA1D87E9CB0038CAF4 /* YWFileHandle.m */; };
 		6121A7A21D753191001E8215 /* YWPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121A7A11D753191001E8215 /* YWPlayView.m */; };
 		612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F81871D6C37AC00AA829F /* HomePageViewModel.m */; };
 		612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818A1D6C381200AA829F /* BaseViewModel.m */; };
@@ -77,6 +83,18 @@
 
 /* Begin PBXFileReference section */
 		184A66268665E443784E8BF8 /* Pods-YWXiMaLaYa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWXiMaLaYa.release.xcconfig"; path = "Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa.release.xcconfig"; sourceTree = "<group>"; };
+		449B46B91D87E8AA0038CAF4 /* NSURL+YWLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+YWLoad.h"; sourceTree = "<group>"; };
+		449B46BA1D87E8AA0038CAF4 /* NSURL+YWLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YWLoad.m"; sourceTree = "<group>"; };
+		449B46BC1D87E8E70038CAF4 /* NSString+YWLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YWLoad.h"; sourceTree = "<group>"; };
+		449B46BD1D87E8E70038CAF4 /* NSString+YWLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YWLoad.m"; sourceTree = "<group>"; };
+		449B46C01D87E98C0038CAF4 /* YWPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWPlayer.h; sourceTree = "<group>"; };
+		449B46C11D87E98C0038CAF4 /* YWPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWPlayer.m; sourceTree = "<group>"; };
+		449B46C31D87E9A70038CAF4 /* YWResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWResourceLoader.h; sourceTree = "<group>"; };
+		449B46C41D87E9A70038CAF4 /* YWResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWResourceLoader.m; sourceTree = "<group>"; };
+		449B46C61D87E9BA0038CAF4 /* YWRequestTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWRequestTask.h; sourceTree = "<group>"; };
+		449B46C71D87E9BA0038CAF4 /* YWRequestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWRequestTask.m; sourceTree = "<group>"; };
+		449B46C91D87E9CB0038CAF4 /* YWFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWFileHandle.h; sourceTree = "<group>"; };
+		449B46CA1D87E9CB0038CAF4 /* YWFileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWFileHandle.m; sourceTree = "<group>"; };
 		5B2DDE3C71135161CD5CC3E9 /* Pods-YWXiMaLaYa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWXiMaLaYa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa.debug.xcconfig"; sourceTree = "<group>"; };
 		6121A7A01D753191001E8215 /* YWPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWPlayView.h; sourceTree = "<group>"; };
 		6121A7A11D753191001E8215 /* YWPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWPlayView.m; sourceTree = "<group>"; };
@@ -210,6 +228,41 @@
 				668271AD467F1D37F7338E88 /* libPods-YWXiMaLaYa.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449B46B41D87E8440038CAF4 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				449B46BF1D87E9680038CAF4 /* Load */,
+				449B46B51D87E8440038CAF4 /* Category */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		449B46B51D87E8440038CAF4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				449B46B91D87E8AA0038CAF4 /* NSURL+YWLoad.h */,
+				449B46BA1D87E8AA0038CAF4 /* NSURL+YWLoad.m */,
+				449B46BC1D87E8E70038CAF4 /* NSString+YWLoad.h */,
+				449B46BD1D87E8E70038CAF4 /* NSString+YWLoad.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		449B46BF1D87E9680038CAF4 /* Load */ = {
+			isa = PBXGroup;
+			children = (
+				449B46C01D87E98C0038CAF4 /* YWPlayer.h */,
+				449B46C11D87E98C0038CAF4 /* YWPlayer.m */,
+				449B46C31D87E9A70038CAF4 /* YWResourceLoader.h */,
+				449B46C41D87E9A70038CAF4 /* YWResourceLoader.m */,
+				449B46C61D87E9BA0038CAF4 /* YWRequestTask.h */,
+				449B46C71D87E9BA0038CAF4 /* YWRequestTask.m */,
+				449B46C91D87E9CB0038CAF4 /* YWFileHandle.h */,
+				449B46CA1D87E9CB0038CAF4 /* YWFileHandle.m */,
+			);
+			name = Load;
 			sourceTree = "<group>";
 		};
 		6131B57F1D76839B00EE5369 /* Caicai */ = {
@@ -349,6 +402,7 @@
 		6187694D1D65922E0018B807 /* PublicClass */ = {
 			isa = PBXGroup;
 			children = (
+				449B46B41D87E8440038CAF4 /* Player */,
 				6187694E1D65922E0018B807 /* Controller */,
 				6187694F1D65922E0018B807 /* Model */,
 				618769501D65922E0018B807 /* NetManager */,
@@ -555,6 +609,7 @@
 				61C6103D1D658C2B00219E61 /* Resources */,
 				23ACCBA30712F93D487C08FE /* [CP] Embed Pods Frameworks */,
 				6D5E8E91255266FC6515E4B2 /* [CP] Copy Pods Resources */,
+				C43C05C4AE4F212F32A39396 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -716,6 +771,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C43C05C4AE4F212F32A39396 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -723,22 +793,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449B46C21D87E98C0038CAF4 /* YWPlayer.m in Sources */,
 				6187695C1D6595640018B807 /* YWMeViewController.m in Sources */,
 				6155A84C1D70114600E9E5D0 /* MoreContentViewModel.m in Sources */,
 				617E623E1D6D40E10036FBFC /* SpecialCell.m in Sources */,
 				612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */,
 				617E623B1D6D40D40036FBFC /* DiscoveryCell.m in Sources */,
+				449B46C81D87E9BA0038CAF4 /* YWRequestTask.m in Sources */,
+				449B46BE1D87E8E70038CAF4 /* NSString+YWLoad.m in Sources */,
 				618769741D65A0060018B807 /* YWFindViewController.m in Sources */,
 				61C610471D658C2B00219E61 /* AppDelegate.m in Sources */,
 				61884EA31D6ADDBC003371A0 /* BaseNetManager.m in Sources */,
 				6121A7A21D753191001E8215 /* YWPlayView.m in Sources */,
 				6187696E1D6596B70018B807 /* AlbumViewController.m in Sources */,
+				449B46CB1D87E9CB0038CAF4 /* YWFileHandle.m in Sources */,
 				617E62441D6D4BB20036FBFC /* FocusImageScrollView.m in Sources */,
 				61C610441D658C2B00219E61 /* main.m in Sources */,
 				6131B5851D76839B00EE5369 /* CaiCaiViewController.m in Sources */,
 				612F818E1D6D323D00AA829F /* TitleView.m in Sources */,
 				6155A8491D6FF5EE00E9E5D0 /* MoreContentNetManager.m in Sources */,
 				618769711D6596C90018B807 /* DownloadViewController.m in Sources */,
+				449B46BB1D87E8AA0038CAF4 /* NSURL+YWLoad.m in Sources */,
 				617E62381D6D40C50036FBFC /* FindPutCell.m in Sources */,
 				617E62471D6D75290036FBFC /* MBProgressHUD+YW.m in Sources */,
 				61884EA91D6AE521003371A0 /* HomePageModel.m in Sources */,
@@ -755,6 +830,7 @@
 				61884EAC1D6AF340003371A0 /* BaseModel.m in Sources */,
 				6131B5861D76839B00EE5369 /* YWSoundViewController.m in Sources */,
 				618769831D65A0500018B807 /* AnchorViewController.m in Sources */,
+				449B46C51D87E9A70038CAF4 /* YWResourceLoader.m in Sources */,
 				6187695F1D6595860018B807 /* SettingViewController.m in Sources */,
 				6155A83D1D6FD59800E9E5D0 /* DescribleView.m in Sources */,
 				617E62411D6D40FB0036FBFC /* ContentShowView.m in Sources */,
@@ -899,7 +975,7 @@
 			baseConfigurationReference = 5B2DDE3C71135161CD5CC3E9 /* Pods-YWXiMaLaYa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/CQ_YWMan/Desktop/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;
@@ -912,7 +988,7 @@
 			baseConfigurationReference = 184A66268665E443784E8BF8 /* Pods-YWXiMaLaYa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/CQ_YWMan/Desktop/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;
