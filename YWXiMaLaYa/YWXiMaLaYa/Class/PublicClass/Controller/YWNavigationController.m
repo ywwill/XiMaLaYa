@@ -15,8 +15,8 @@
 
 @property (nonatomic, strong) YWPlayView *playView;
 
-//@property (nonatomic, strong) YWPlayer *player;
-@property (nonatomic, strong) AVPlayer *player;
+@property (nonatomic, strong) YWPlayer *player;
+//@property (nonatomic, strong) AVPlayer *player;
 
 @end
 
@@ -27,7 +27,7 @@
    
     self.navigationBarHidden = YES;
     
-    // 开启两个通知接收(HRMeViewController传入)
+    // 开启两个通知接收(YWMeViewController传入)
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hidePlayView:) name:@"hidePlayView" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showPlayView:) name:@"showPlayView" object:nil];
     
@@ -57,17 +57,18 @@
     
     [self.playView.contentImageView setImageWithURL:coverURL];
     
+    //调用stop，移除所有的通知
+    [_player stop];
+    
     //自定义播放器，暂停和播放有bug
-   // _player = [[YWPlayer alloc] initWithURL:musicURL];
+    _player = [[YWPlayer alloc] initWithURL:musicURL];
     
+//    _player = [[AVPlayer alloc] initWithURL:musicURL];;
+//    //后台播放
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+//
+//    [[AVAudioSession sharedInstance] setActive:YES error:nil];
     
-    
-    _player = [[AVPlayer alloc] initWithURL:musicURL];;
-    //后台播放
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-
-    [[AVAudioSession sharedInstance] setActive:YES error:nil];
-
     [_player play];
 }
 

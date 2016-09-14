@@ -25,6 +25,7 @@
 
 - (instancetype)initWithURL:(NSURL *)url {
     if (self == [super init]) {
+        
         self.url = url;
         [self reloadCurrentItem];
     }
@@ -57,9 +58,8 @@
     //Player
     self.player = [AVPlayer playerWithPlayerItem:self.currentItem];
     
-#pragma mark -- 如果要添加进度条，需要调用这个方法
     //Observer
-   // [self addObserver];
+    [self addObserver];
     
     //State
     _state = YWPlayerStateWaiting;
@@ -89,7 +89,7 @@
     }
     [self.player pause];
     [self.resourceLoader stopLoading];
-   // [self removeObserver];
+    [self removeObserver];
     self.resourceLoader = nil;
     self.currentItem = nil;
     self.player = nil;
@@ -129,20 +129,20 @@
     [songItem addObserver:self forKeyPath:@"playbackLikelyToKeepUp" options:NSKeyValueObservingOptionNew context:nil];
 }
 
-//- (void)removeObserver {
-//    AVPlayerItem * songItem = self.currentItem;
-//    [[NSNotificationCenter defaultCenter] removeObserver:self];
-//    if (self.timeObserve) {
-//        [self.player removeTimeObserver:self.timeObserve];
-//        self.timeObserve = nil;
-//    }
-//    [songItem removeObserver:self forKeyPath:@"status"];
-//    [songItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
-//    [songItem removeObserver:self forKeyPath:@"playbackBufferEmpty"];
-//    [songItem removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
-//    [self.player removeObserver:self forKeyPath:@"rate"];
-//    [self.player replaceCurrentItemWithPlayerItem:nil];
-//}
+- (void)removeObserver {
+    AVPlayerItem * songItem = self.currentItem;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    if (self.timeObserve) {
+        [self.player removeTimeObserver:self.timeObserve];
+        self.timeObserve = nil;
+    }
+    [songItem removeObserver:self forKeyPath:@"status"];
+    [songItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
+    [songItem removeObserver:self forKeyPath:@"playbackBufferEmpty"];
+    [songItem removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
+    [self.player removeObserver:self forKeyPath:@"rate"];
+    [self.player replaceCurrentItemWithPlayerItem:nil];
+}
 
 /**
  *  通过KVO监控播放器状态
