@@ -50,6 +50,7 @@
     if (![manager fileExistsAtPath:cacheFolderPath]) {
         [manager createDirectoryAtPath:cacheFolderPath withIntermediateDirectories:YES attributes:nil error:nil];
     }
+    
     NSString * cacheFilePath = [NSString stringWithFormat:@"%@/%@", cacheFolderPath, name];
     BOOL success = [[NSFileManager defaultManager] copyItemAtPath:[NSString tempFilePath] toPath:cacheFilePath error:nil];
     NSLog(@"cache file : %@", success ? @"success" : @"fail");
@@ -58,7 +59,7 @@
 //是否存在缓存文件 存在：返回文件路径 不存在：返回nil
 + (NSString *)cacheFileExistsWithURL:(NSURL *)url {
     NSString * cacheFilePath = [NSString stringWithFormat:@"%@/%@", [NSString cacheFolderPath], [NSString fileNameWithURL:url]];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:cacheFilePath]) {
+            if ([[NSFileManager defaultManager] fileExistsAtPath:cacheFilePath]) {
         return cacheFilePath;
     }
     return nil;

@@ -60,7 +60,7 @@
     //调用stop，移除所有的通知
     [_player stop];
     
-    //自定义播放器，暂停和播放有bug
+    //自定义播放器
     _player = [[YWPlayer alloc] initWithURL:musicURL];
     
 //    _player = [[AVPlayer alloc] initWithURL:musicURL];;

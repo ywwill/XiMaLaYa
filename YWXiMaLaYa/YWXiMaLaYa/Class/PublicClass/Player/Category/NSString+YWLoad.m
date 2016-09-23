@@ -11,11 +11,13 @@
 @implementation NSString (YWLoad)
 
 + (NSString *)tempFilePath {
-    return [[NSHomeDirectory( ) stringByAppendingPathComponent:@"tmp"] stringByAppendingPathComponent:@"MusicTemp.mp4"];
+    return [[NSHomeDirectory() stringByAppendingPathComponent:@"tmp"] stringByAppendingPathComponent:@"MusicTemp.mp4"];
 }
 
 
 + (NSString *)cacheFolderPath {
+//    
+//    NSLog(@"------------------------------------%@",[NSHomeDirectory() stringByAppendingPathComponent:@"Library"]);
     return [[NSHomeDirectory( ) stringByAppendingPathComponent:@"Library"] stringByAppendingPathComponent:@"MusicCaches"];
 }
 

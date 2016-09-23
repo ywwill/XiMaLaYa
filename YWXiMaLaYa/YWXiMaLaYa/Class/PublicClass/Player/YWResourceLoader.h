@@ -10,6 +10,9 @@
 #import <AVFoundation/AVFoundation.h>
 #import "YWRequestTask.h"
 
+//加载流程
+//addLoadingRequest —> processRequestList —> finishLoadingWithLoadingRequest(加载缓存文件)
+
 #define MimeType @"video/mp4"
 
 @class YWResourceLoader;

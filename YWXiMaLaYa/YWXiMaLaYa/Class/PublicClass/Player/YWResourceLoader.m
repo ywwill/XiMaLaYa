@@ -37,7 +37,7 @@
 }
 
 - (void)resourceLoader:(AVAssetResourceLoader *)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest *)loadingRequest {
-    NSLog(@"CancelLoadingRequest  < requestedOffset = %lld, currentOffset = %lld, requestedLength = %ld >", loadingRequest.dataRequest.requestedOffset, loadingRequest.dataRequest.currentOffset, loadingRequest.dataRequest.requestedLength);
+    NSLog(@"CancelLoadingRequest  < requestedOffset = %lld, currentOffset = %lld, requestedLength = %ld>", loadingRequest.dataRequest.requestedOffset, loadingRequest.dataRequest.currentOffset, loadingRequest.dataRequest.requestedLength);
     [self removeLoadingRequest:loadingRequest];
 }
 
@@ -57,6 +57,7 @@
 - (void)requestTaskDidFailWithError:(NSError *)error {
     //加载数据错误的处理
 }
+
 
 #pragma mark - 处理LoadingRequest
 - (void)addLoadingRequest:(AVAssetResourceLoadingRequest *)loadingRequest {
