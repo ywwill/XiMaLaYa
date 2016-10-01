@@ -662,11 +662,12 @@
 		61C610371D658C2B00219E61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = ywwill;
 				TargetAttributes = {
 					61C6103E1D658C2B00219E61 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7Q3FN28VDH;
 					};
 					61C610571D658C2C00219E61 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -902,8 +903,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -946,8 +949,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -975,7 +980,8 @@
 			baseConfigurationReference = 5B2DDE3C71135161CD5CC3E9 /* Pods-YWXiMaLaYa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = 7Q3FN28VDH;
+				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;
@@ -988,7 +994,8 @@
 			baseConfigurationReference = 184A66268665E443784E8BF8 /* Pods-YWXiMaLaYa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = 7Q3FN28VDH;
+				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;

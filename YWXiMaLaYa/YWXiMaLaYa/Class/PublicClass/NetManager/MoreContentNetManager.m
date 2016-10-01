@@ -26,7 +26,7 @@
                             yURLPosition
                             };
     
-    NSString *path = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/1/20",albumId];
+    NSString *path = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/1/20",(long)albumId];
  
     return [self GET:path parameters:param completionHandle:^(id responseObject, NSError *error) {
         completed([DetailModel mj_objectWithKeyValues:responseObject], error);
@@ -42,7 +42,7 @@
                             yURLPosition
                             };
     
-    NSString *path = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/1/20",albumId];
+    NSString *path = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/1/20",(long)albumId];
     
     return [self GET:path parameters:param completionHandle:^(id responseObject, NSError *error) {
         completed([DetailModel mj_objectWithKeyValues:responseObject], error);

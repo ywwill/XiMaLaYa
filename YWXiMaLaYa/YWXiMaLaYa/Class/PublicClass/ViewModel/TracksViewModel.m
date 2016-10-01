@@ -69,23 +69,23 @@
     //转小时
     NSInteger hours = time / 3600;
     if (hours < 24) {
-        return [NSString stringWithFormat:@"%ld小时前",hours];
+        return [NSString stringWithFormat:@"%ld小时前",(long)hours];
     }
     
     //秒转天
     NSInteger days = time / 3600 / 24;
     if (days < 24) {
-        return [NSString stringWithFormat:@"%ld天前",days];
+        return [NSString stringWithFormat:@"%ld天前",(long)days];
     }
     
     //秒转月
     NSInteger months = time/3600/24/30;
     if (months < 12) {
-        return [NSString stringWithFormat:@"%ld月前",months];
+        return [NSString stringWithFormat:@"%ld月前",(long)months];
     }
     //秒转年
     NSInteger years = time/3600/24/30/12;
-    return [NSString stringWithFormat:@"%ld年前",years];
+    return [NSString stringWithFormat:@"%ld年前",(long)years];
     
 }
 
@@ -97,7 +97,7 @@
     //秒
     NSInteger second = (NSInteger)duration % 60;
     
-    return [NSString stringWithFormat:@"%02ld:%02ld", minute, second];
+    return [NSString stringWithFormat:@"%02ld:%02ld", (long)minute, (long)second];
 }
 
 - (NSString *)playCountFor:(NSInteger)row{

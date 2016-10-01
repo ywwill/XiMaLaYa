@@ -19,7 +19,7 @@
 
 
 - (void)awakeFromNib{
- 
+    [super awakeFromNib];
     self.imageView.contentMode = UIViewContentModeCenter;
 }
 
@@ -43,7 +43,8 @@ static CGFloat textH = 0;
         
 #endif
     }else{
-        titleW = [self.currentTitle sizeWithFont:[UIFont systemFontOfSize:13]].width;
+       // titleW = [self.currentTitle sizeWithFont:[UIFont systemFontOfSize:13]].width;
+        titleW = [self.currentTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]}].width;
     }
     
     
