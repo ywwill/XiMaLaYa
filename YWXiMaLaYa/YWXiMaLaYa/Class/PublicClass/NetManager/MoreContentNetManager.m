@@ -34,15 +34,16 @@
 }
 
 
-+ (id)getCaiCaiForAlbumId:(NSInteger)albumId idAsc:(BOOL)isAsc completionHandle:(void (^)(id, NSError *))completed{
++ (id)getCaiCaiForAlbumId:(NSInteger)albumId page:(NSInteger)pageId idAsc:(BOOL)isAsc completionHandle:(void (^)(id, NSError *))completed{
     
-    NSDictionary *param = @{@"albumId" : @(albumId),
+    NSDictionary *param = @{//@"albumId" : @(albumId),
+                            //@"pageId" :@(pageId),
                             @"isAsc" : @(isAsc),
                             yURLDevice,
                             yURLPosition
                             };
     
-    NSString *path = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/1/20",(long)albumId];
+    NSString *path = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/%ld/20",(long)albumId,(long)pageId];
     
     return [self GET:path parameters:param completionHandle:^(id responseObject, NSError *error) {
         completed([DetailModel mj_objectWithKeyValues:responseObject], error);

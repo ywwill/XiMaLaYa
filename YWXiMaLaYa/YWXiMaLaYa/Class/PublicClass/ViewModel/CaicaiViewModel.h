@@ -13,9 +13,11 @@
 @interface CaicaiViewModel : BaseViewModel
 
 //用传递的参数 albumId ,title初始化 ViewModel
-- (instancetype)initWithAlbumId:(NSInteger)albumId isAsc:(BOOL)asc;
+- (instancetype)initWithAlbumId:(NSInteger)albumId pageId:(NSInteger)pageId isAsc:(BOOL)asc;
 
 @property (nonatomic,assign) NSInteger albumId;
+
+@property (nonatomic,assign) NSInteger pageId;
 
 @property (nonatomic,assign,getter=isAsc) BOOL asc;
 

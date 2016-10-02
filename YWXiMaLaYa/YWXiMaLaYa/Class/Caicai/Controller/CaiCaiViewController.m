@@ -9,6 +9,7 @@
 #import "CaiCaiViewController.h"
 #import "CaicaiViewModel.h"
 #import "MusicDetailCell.h"
+#import <MJRefresh.h>
 
 @interface CaiCaiViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -21,6 +22,9 @@
 
 @property (nonatomic, assign) NSInteger albumId;
 
+@property (nonatomic, assign) NSUInteger pageId;
+
+
 @end
 
 @implementation CaiCaiViewController
@@ -29,6 +33,7 @@
     [super viewDidLoad];
     
     _albumId = 214706;//采采专栏
+    _pageId = 1;//初始化为第1页
     
     [self setUp];
     
@@ -42,6 +47,7 @@
 
     _headView = [[UIView alloc]initWithFrame:CGRectMake(0, -170, SCREEN_WIDTH, 170)];
     [self.tableView addSubview:_headView];
+ 
     
     UIImageView *headImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"caicai"]];
     [_headView addSubview:headImage];
@@ -107,7 +113,7 @@
 - (CaicaiViewModel *)caicaiViewModel{
     
     if (!_caicaiViewModel) {
-        _caicaiViewModel = [[CaicaiViewModel alloc]initWithAlbumId:_albumId isAsc:_isAsc];;
+        _caicaiViewModel = [[CaicaiViewModel alloc]initWithAlbumId:_albumId pageId:_pageId isAsc:_isAsc];;
     }
     return _caicaiViewModel;
 }
@@ -131,6 +137,17 @@
         [_tableView registerClass:[MusicDetailCell class] forCellReuseIdentifier:@"MusicDetailCell"];
         
         _tableView.rowHeight = 80;
+        
+#warning 刷新实现由bug
+        // 上拉
+        _tableView.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
+            _pageId ++;
+            [self.caicaiViewModel getDataComletionHandle:^(NSError *error) {
+                [_tableView reloadData];
+                [_tableView.mj_footer endRefreshing];
+            }];
+        }];
+
     }
     return _tableView;
 }

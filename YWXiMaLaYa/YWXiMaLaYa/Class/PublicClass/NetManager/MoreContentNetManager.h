@@ -18,7 +18,7 @@
 + (id)getTracksForAlbumId:(NSInteger)albumId mainTitle:(NSString *)title idAsc:(BOOL)isAsc completionHandle:(void(^)(id responseObject, NSError *error))completed;
 
 //采采
-+ (id)getCaiCaiForAlbumId:(NSInteger)albumId idAsc:(BOOL)isAsc completionHandle:(void(^)(id responseObject, NSError *error))completed;
++ (id)getCaiCaiForAlbumId:(NSInteger)albumId page:(NSInteger)pageId idAsc:(BOOL)isAsc completionHandle:(void(^)(id responseObject, NSError *error))completed;
 
 
 

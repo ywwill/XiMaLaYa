@@ -18,10 +18,11 @@
 
 @implementation CaicaiViewModel
 
-- (instancetype)initWithAlbumId:(NSInteger)albumId isAsc:(BOOL)asc{
+- (instancetype)initWithAlbumId:(NSInteger)albumId pageId:(NSInteger)pageId isAsc:(BOOL)asc{
     
     if (self = [super init]) {
         _albumId = albumId;
+        _pageId = pageId;
         _asc = asc;
     }
     return self;
@@ -30,10 +31,11 @@
 - (void)getDataComletionHandle:(void (^)(NSError *))completed{
     
     
-    self.dataTask = [MoreContentNetManager getCaiCaiForAlbumId:_albumId idAsc:_asc completionHandle:^(id responseObject, NSError *error) {
+    self.dataTask = [MoreContentNetManager getCaiCaiForAlbumId:_albumId page:_pageId idAsc:_asc completionHandle:^(id responseObject, NSError *error) {
         self.model = responseObject;
         completed(error);
     }];
+
 }
 
 #pragma mark - 返回专辑歌曲单
