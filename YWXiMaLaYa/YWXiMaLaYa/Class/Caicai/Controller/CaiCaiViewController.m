@@ -17,7 +17,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) CaicaiViewModel *caicaiViewModel;
 
-@property (nonatomic, strong) UIView *headView;
+@property (nonatomic, strong) UIImageView *headView;
 //默认升序
 @property (nonatomic, assign) BOOL isAsc;
 
@@ -47,17 +47,15 @@
 
 - (void)setUp{
 
-    _headView = [[UIView alloc]initWithFrame:CGRectMake(0, -170, SCREEN_WIDTH, 170)];
-    [self.tableView addSubview:_headView];
- 
+    _headView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"caicai"]];
+    [self.view addSubview:_headView];
     
-    UIImageView *headImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"caicai"]];
-    [_headView addSubview:headImage];
+    [_headView mas_makeConstraints:^(MASConstraintMaker *make) {
     
-    [headImage mas_makeConstraints:^(MASConstraintMaker *make) {
-    
-        make.edges.mas_equalTo(UIEdgeInsetsMake(0,50,0,50));
-    
+        make.height.mas_equalTo(150),
+        make.left.mas_equalTo(self.view),
+        make.right.mas_equalTo(self.view),
+        make.top.mas_equalTo(self);
     }];
 }
 
@@ -125,10 +123,10 @@
     if (!_tableView) {
         
 
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-100) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 160, SCREEN_WIDTH, SCREEN_HEIGHT-230) style:UITableViewStylePlain];
         
         //插入头视图
-        _tableView.contentInset = UIEdgeInsetsMake(170, 0, 0, 0);
+        //_tableView.contentInset = UIEdgeInsetsMake(170, 0, 0, 0);
         
         [self.view addSubview:_tableView];
         _tableView.delegate = self;
