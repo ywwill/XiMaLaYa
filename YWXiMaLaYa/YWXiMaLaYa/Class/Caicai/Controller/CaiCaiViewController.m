@@ -137,7 +137,7 @@
         _tableView.rowHeight = 80;
         
         //下拉
-        _tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             self.pageId--;
             if (_pageId == 0) {
                 _pageId = 1;
@@ -146,6 +146,8 @@
             [self.caicaiViewModel getDataComletionHandle:^(NSError *error) {
                 [_tableView.mj_header endRefreshing];
                 [_tableView reloadData];
+                NSIndexPath *top = [NSIndexPath indexPathForRow:0 inSection:0];
+                [_tableView scrollToRowAtIndexPath:top atScrollPosition:UITableViewScrollPositionBottom animated:YES];
             }];
 
         }];
