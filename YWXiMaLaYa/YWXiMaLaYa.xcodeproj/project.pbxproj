@@ -983,6 +983,7 @@
 				DEVELOPMENT_TEAM = 7Q3FN28VDH;
 				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -997,6 +998,7 @@
 				DEVELOPMENT_TEAM = 7Q3FN28VDH;
 				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;
 				PRODUCT_NAME = "$(TARGET_NAME)";

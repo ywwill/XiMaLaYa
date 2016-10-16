@@ -11,6 +11,7 @@
 #import "MusicDetailCell.h"
 #import <MJRefresh.h>
 
+
 @interface CaiCaiViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -22,8 +23,7 @@
 
 @property (nonatomic, assign) NSInteger albumId;
 
-@property (nonatomic, assign) NSUInteger pageId;
-
+@property (nonatomic, assign) NSInteger pageId;
 
 @end
 
@@ -33,6 +33,8 @@
     [super viewDidLoad];
     
     _albumId = 214706;//采采专栏
+    
+
     _pageId = 1;//初始化为第1页
     
     [self setUp];
@@ -113,7 +115,7 @@
 - (CaicaiViewModel *)caicaiViewModel{
     
     if (!_caicaiViewModel) {
-        _caicaiViewModel = [[CaicaiViewModel alloc]initWithAlbumId:_albumId pageId:_pageId isAsc:_isAsc];;
+        _caicaiViewModel = [[CaicaiViewModel alloc]initWithAlbumId:_albumId isAsc:_isAsc];;
     }
     return _caicaiViewModel;
 }
@@ -122,9 +124,7 @@
     
     if (!_tableView) {
         
-//        CGRect frame = self.view.bounds;
-//        frame.origin.y -= 10;
-        
+
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-100) style:UITableViewStylePlain];
         
         //插入头视图
@@ -138,19 +138,34 @@
         
         _tableView.rowHeight = 80;
         
-#warning 刷新实现由bug
-        // 上拉
-        _tableView.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
-            _pageId ++;
+        //下拉
+        _tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+            self.pageId--;
+            if (_pageId == 0) {
+                _pageId = 1;
+            }
+            self.caicaiViewModel.pageId = self.pageId;
             [self.caicaiViewModel getDataComletionHandle:^(NSError *error) {
+                [_tableView.mj_header endRefreshing];
                 [_tableView reloadData];
+            }];
+
+        }];
+        
+        // 上拉
+        _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            self.pageId++;
+            self.caicaiViewModel.pageId = self.pageId;
+            [self.caicaiViewModel getDataComletionHandle:^(NSError *error) {
                 [_tableView.mj_footer endRefreshing];
+                [_tableView reloadData];
             }];
         }];
 
     }
     return _tableView;
 }
+
 
 
 @end

@@ -18,11 +18,11 @@
 
 @implementation CaicaiViewModel
 
-- (instancetype)initWithAlbumId:(NSInteger)albumId pageId:(NSInteger)pageId isAsc:(BOOL)asc{
+- (instancetype)initWithAlbumId:(NSInteger)albumId isAsc:(BOOL)asc{
     
     if (self = [super init]) {
+        _pageId = 1;
         _albumId = albumId;
-        _pageId = pageId;
         _asc = asc;
     }
     return self;

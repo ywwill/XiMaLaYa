@@ -42,6 +42,7 @@
                             yURLDevice,
                             yURLPosition
                             };
+    //http://mobile.ximalaya.com/mobile/others/ca/album/track/214706/true/1/20
     
     NSString *path = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%ld/true/%ld/20",(long)albumId,(long)pageId];
     
