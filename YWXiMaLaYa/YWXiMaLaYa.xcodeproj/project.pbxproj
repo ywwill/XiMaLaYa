@@ -13,6 +13,9 @@
 		449B46C51D87E9A70038CAF4 /* YWResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46C41D87E9A70038CAF4 /* YWResourceLoader.m */; };
 		449B46C81D87E9BA0038CAF4 /* YWRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46C71D87E9BA0038CAF4 /* YWRequestTask.m */; };
 		449B46CB1D87E9CB0038CAF4 /* YWFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46CA1D87E9CB0038CAF4 /* YWFileHandle.m */; };
+		44E07D4B1F317B8E000EEAAA /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E07D461F317B8E000EEAAA /* AlbumViewController.m */; };
+		44E07D4C1F317B8E000EEAAA /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E07D481F317B8E000EEAAA /* DownloadViewController.m */; };
+		44E07D4D1F317B8E000EEAAA /* YWDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E07D4A1F317B8E000EEAAA /* YWDownloadViewController.m */; };
 		6121A7A21D753191001E8215 /* YWPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121A7A11D753191001E8215 /* YWPlayView.m */; };
 		612F81881D6C37AC00AA829F /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F81871D6C37AC00AA829F /* HomePageViewModel.m */; };
 		612F818B1D6C381200AA829F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F818A1D6C381200AA829F /* BaseViewModel.m */; };
@@ -38,9 +41,6 @@
 		617E62471D6D75290036FBFC /* MBProgressHUD+YW.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E62461D6D75290036FBFC /* MBProgressHUD+YW.m */; };
 		6187695C1D6595640018B807 /* YWMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187695B1D6595640018B807 /* YWMeViewController.m */; };
 		6187695F1D6595860018B807 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187695E1D6595860018B807 /* SettingViewController.m */; };
-		6187696B1D6596A00018B807 /* YWDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187696A1D6596A00018B807 /* YWDownloadViewController.m */; };
-		6187696E1D6596B70018B807 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187696D1D6596B70018B807 /* AlbumViewController.m */; };
-		618769711D6596C90018B807 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769701D6596C90018B807 /* DownloadViewController.m */; };
 		618769741D65A0060018B807 /* YWFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769731D65A0060018B807 /* YWFindViewController.m */; };
 		618769771D65A01B0018B807 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769761D65A01B0018B807 /* HomePageViewController.m */; };
 		6187697A1D65A0280018B807 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618769791D65A0280018B807 /* CategoryViewController.m */; };
@@ -95,6 +95,12 @@
 		449B46C71D87E9BA0038CAF4 /* YWRequestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWRequestTask.m; sourceTree = "<group>"; };
 		449B46C91D87E9CB0038CAF4 /* YWFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWFileHandle.h; sourceTree = "<group>"; };
 		449B46CA1D87E9CB0038CAF4 /* YWFileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWFileHandle.m; sourceTree = "<group>"; };
+		44E07D451F317B8E000EEAAA /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		44E07D461F317B8E000EEAAA /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		44E07D471F317B8E000EEAAA /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		44E07D481F317B8E000EEAAA /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		44E07D491F317B8E000EEAAA /* YWDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWDownloadViewController.h; sourceTree = "<group>"; };
+		44E07D4A1F317B8E000EEAAA /* YWDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWDownloadViewController.m; sourceTree = "<group>"; };
 		5B2DDE3C71135161CD5CC3E9 /* Pods-YWXiMaLaYa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWXiMaLaYa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa.debug.xcconfig"; sourceTree = "<group>"; };
 		6121A7A01D753191001E8215 /* YWPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWPlayView.h; sourceTree = "<group>"; };
 		6121A7A11D753191001E8215 /* YWPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWPlayView.m; sourceTree = "<group>"; };
@@ -147,12 +153,6 @@
 		6187695B1D6595640018B807 /* YWMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWMeViewController.m; sourceTree = "<group>"; };
 		6187695D1D6595860018B807 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		6187695E1D6595860018B807 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		618769691D6596A00018B807 /* YWDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWDownloadViewController.h; sourceTree = "<group>"; };
-		6187696A1D6596A00018B807 /* YWDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWDownloadViewController.m; sourceTree = "<group>"; };
-		6187696C1D6596B70018B807 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
-		6187696D1D6596B70018B807 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
-		6187696F1D6596C90018B807 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
-		618769701D6596C90018B807 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
 		618769721D65A0060018B807 /* YWFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWFindViewController.h; sourceTree = "<group>"; };
 		618769731D65A0060018B807 /* YWFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWFindViewController.m; sourceTree = "<group>"; };
 		618769751D65A01B0018B807 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
@@ -265,6 +265,27 @@
 			name = Load;
 			sourceTree = "<group>";
 		};
+		44E07D431F317B8E000EEAAA /* DownloadListen */ = {
+			isa = PBXGroup;
+			children = (
+				44E07D441F317B8E000EEAAA /* Controller */,
+			);
+			path = DownloadListen;
+			sourceTree = "<group>";
+		};
+		44E07D441F317B8E000EEAAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44E07D451F317B8E000EEAAA /* AlbumViewController.h */,
+				44E07D461F317B8E000EEAAA /* AlbumViewController.m */,
+				44E07D471F317B8E000EEAAA /* DownloadViewController.h */,
+				44E07D481F317B8E000EEAAA /* DownloadViewController.m */,
+				44E07D491F317B8E000EEAAA /* YWDownloadViewController.h */,
+				44E07D4A1F317B8E000EEAAA /* YWDownloadViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		6131B57F1D76839B00EE5369 /* Caicai */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,8 +328,8 @@
 				6187694D1D65922E0018B807 /* PublicClass */,
 				618769451D65922E0018B807 /* Found */,
 				6131B57F1D76839B00EE5369 /* Caicai */,
+				44E07D431F317B8E000EEAAA /* DownloadListen */,
 				6187694B1D65922E0018B807 /* Me */,
-				618769531D65922E0018B807 /* 下载听 */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -485,27 +506,6 @@
 				6131B57A1D76769700EE5369 /* CaicaiViewModel.m */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		618769531D65922E0018B807 /* 下载听 */ = {
-			isa = PBXGroup;
-			children = (
-				618769541D65922E0018B807 /* Controller */,
-			);
-			path = "下载听";
-			sourceTree = "<group>";
-		};
-		618769541D65922E0018B807 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				618769691D6596A00018B807 /* YWDownloadViewController.h */,
-				6187696A1D6596A00018B807 /* YWDownloadViewController.m */,
-				6187696C1D6596B70018B807 /* AlbumViewController.h */,
-				6187696D1D6596B70018B807 /* AlbumViewController.m */,
-				6187696F1D6596C90018B807 /* DownloadViewController.h */,
-				618769701D6596C90018B807 /* DownloadViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		618769571D6592340018B807 /* Category */ = {
@@ -806,14 +806,12 @@
 				61C610471D658C2B00219E61 /* AppDelegate.m in Sources */,
 				61884EA31D6ADDBC003371A0 /* BaseNetManager.m in Sources */,
 				6121A7A21D753191001E8215 /* YWPlayView.m in Sources */,
-				6187696E1D6596B70018B807 /* AlbumViewController.m in Sources */,
 				449B46CB1D87E9CB0038CAF4 /* YWFileHandle.m in Sources */,
 				617E62441D6D4BB20036FBFC /* FocusImageScrollView.m in Sources */,
 				61C610441D658C2B00219E61 /* main.m in Sources */,
 				6131B5851D76839B00EE5369 /* CaiCaiViewController.m in Sources */,
 				612F818E1D6D323D00AA829F /* TitleView.m in Sources */,
 				6155A8491D6FF5EE00E9E5D0 /* MoreContentNetManager.m in Sources */,
-				618769711D6596C90018B807 /* DownloadViewController.m in Sources */,
 				449B46BB1D87E8AA0038CAF4 /* NSURL+YWLoad.m in Sources */,
 				617E62381D6D40C50036FBFC /* FindPutCell.m in Sources */,
 				617E62471D6D75290036FBFC /* MBProgressHUD+YW.m in Sources */,
@@ -822,8 +820,8 @@
 				6155A8461D6FF15B00E9E5D0 /* DetailModel.m in Sources */,
 				6155A84F1D7019D200E9E5D0 /* TracksViewModel.m in Sources */,
 				618769861D65A2000018B807 /* YWNavigationController.m in Sources */,
+				44E07D4C1F317B8E000EEAAA /* DownloadViewController.m in Sources */,
 				6155A8401D6FD5B000E9E5D0 /* IconNameView.m in Sources */,
-				6187696B1D6596A00018B807 /* YWDownloadViewController.m in Sources */,
 				618769771D65A01B0018B807 /* HomePageViewController.m in Sources */,
 				6155A83A1D6FD4A000E9E5D0 /* AlbumHeaderView.m in Sources */,
 				6187697A1D65A0280018B807 /* CategoryViewController.m in Sources */,
@@ -842,6 +840,8 @@
 				6155A8431D6FE86500E9E5D0 /* MusicDetailCell.m in Sources */,
 				613AB5A61D6EE55300A43568 /* DetailViewController.m in Sources */,
 				618769801D65A0430018B807 /* RankingViewController.m in Sources */,
+				44E07D4D1F317B8E000EEAAA /* YWDownloadViewController.m in Sources */,
+				44E07D4B1F317B8E000EEAAA /* AlbumViewController.m in Sources */,
 				618769891D65A2300018B807 /* YWTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -981,9 +981,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7Q3FN28VDH;
-				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/yangwei/dev/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -996,9 +996,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7Q3FN28VDH;
-				GCC_PREFIX_HEADER = /Users/yangwei/Desktop/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/yangwei/dev/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
