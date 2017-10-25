@@ -74,7 +74,4 @@
 //返回专辑标签数组
 @property (nonatomic, strong) NSArray *tagsName;
 
-
-
-
 @end

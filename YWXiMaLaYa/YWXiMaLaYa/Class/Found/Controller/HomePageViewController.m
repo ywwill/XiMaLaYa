@@ -55,7 +55,7 @@
     }];
 
 }
-#pragma mark - iCarousel代理方法
+#pragma mark - iCarousel delegate
 - (NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel{
 
     return self.homeVM.focusImgNumber;
@@ -199,10 +199,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    
 }
 
 //section头视图

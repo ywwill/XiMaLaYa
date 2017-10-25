@@ -59,6 +59,9 @@
 //是否存在缓存文件 存在：返回文件路径 不存在：返回nil
 + (NSString *)cacheFileExistsWithURL:(NSURL *)url {
     NSString * cacheFilePath = [NSString stringWithFormat:@"%@/%@", [NSString cacheFolderPath], [NSString fileNameWithURL:url]];
+    
+    //[NSString fileNameWithURL:url] 返回的值与 cacheTempFileWithFileName:name中的name一样
+    
             if ([[NSFileManager defaultManager] fileExistsAtPath:cacheFilePath]) {
         return cacheFilePath;
     }

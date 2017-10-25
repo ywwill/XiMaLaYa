@@ -19,7 +19,7 @@
  */
 @interface ContentShowView : UIView
 
-@property (nonatomic, assign) id<ContentShowViewDelegate> delegate;
+@property (nonatomic, weak) id<ContentShowViewDelegate> delegate;
 // 此View的背景视图(框)
 @property (nonatomic,strong) UIImageView *bgImgView;
 

@@ -35,6 +35,4 @@
 
 - (void)stopLoading;
 
-
-
 @end
