@@ -310,7 +310,6 @@
 - (UITableView *)tableView{
     
     if (!_tableView) {
-        
 
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 190, SCREEN_WIDTH, SCREEN_HEIGHT-193) style:UITableViewStylePlain];
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4429CCF5204FE7E3001CF7D5 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4429CCF4204FE7E3001CF7D5 /* CommonTool.m */; };
 		449B46BB1D87E8AA0038CAF4 /* NSURL+YWLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46BA1D87E8AA0038CAF4 /* NSURL+YWLoad.m */; };
 		449B46BE1D87E8E70038CAF4 /* NSString+YWLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46BD1D87E8E70038CAF4 /* NSString+YWLoad.m */; };
 		449B46C21D87E98C0038CAF4 /* YWPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 449B46C11D87E98C0038CAF4 /* YWPlayer.m */; };
@@ -83,6 +84,8 @@
 
 /* Begin PBXFileReference section */
 		184A66268665E443784E8BF8 /* Pods-YWXiMaLaYa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWXiMaLaYa.release.xcconfig"; path = "Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa.release.xcconfig"; sourceTree = "<group>"; };
+		4429CCF3204FE7E3001CF7D5 /* CommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
+		4429CCF4204FE7E3001CF7D5 /* CommonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
 		449B46B91D87E8AA0038CAF4 /* NSURL+YWLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+YWLoad.h"; sourceTree = "<group>"; };
 		449B46BA1D87E8AA0038CAF4 /* NSURL+YWLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YWLoad.m"; sourceTree = "<group>"; };
 		449B46BC1D87E8E70038CAF4 /* NSString+YWLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YWLoad.h"; sourceTree = "<group>"; };
@@ -230,6 +233,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4429CCF2204FE7CC001CF7D5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4429CCF3204FE7E3001CF7D5 /* CommonTool.h */,
+				4429CCF4204FE7E3001CF7D5 /* CommonTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		449B46B41D87E8440038CAF4 /* Player */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +337,7 @@
 			children = (
 				61C610451D658C2B00219E61 /* AppDelegate.h */,
 				61C610461D658C2B00219E61 /* AppDelegate.m */,
+				4429CCF2204FE7CC001CF7D5 /* Tool */,
 				6187694D1D65922E0018B807 /* PublicClass */,
 				618769451D65922E0018B807 /* Found */,
 				6131B57F1D76839B00EE5369 /* Caicai */,
@@ -832,6 +845,7 @@
 				6155A8431D6FE86500E9E5D0 /* MusicDetailCell.m in Sources */,
 				613AB5A61D6EE55300A43568 /* DetailViewController.m in Sources */,
 				618769801D65A0430018B807 /* RankingViewController.m in Sources */,
+				4429CCF5204FE7E3001CF7D5 /* CommonTool.m in Sources */,
 				44E07D4D1F317B8E000EEAAA /* YWDownloadViewController.m in Sources */,
 				44E07D4B1F317B8E000EEAAA /* AlbumViewController.m in Sources */,
 				618769891D65A2300018B807 /* YWTabBarController.m in Sources */,

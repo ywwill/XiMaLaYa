@@ -70,7 +70,6 @@
         [_updateTimeLb mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(20);
             make.right.mas_equalTo(-10);
-            make.width.mas_equalTo(60);
         }];
         _updateTimeLb.textAlignment=NSTextAlignmentRight;
     }
