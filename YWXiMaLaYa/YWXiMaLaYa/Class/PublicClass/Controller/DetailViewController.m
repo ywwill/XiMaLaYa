@@ -78,7 +78,6 @@
     }];
 }
 
-
 // 连带滚动方法，当下拉tableview时，infoView不会跟着向下滚动
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat y = scrollView.contentOffset.y;
@@ -89,7 +88,6 @@
         _infoView.frame = frame;
     }
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -7,13 +7,11 @@
 //
 
 #import "YWFindViewController.h"
-
 #import "HomePageViewController.h"
 #import "CategoryViewController.h"
 #import "LiveViewController.h"
 #import "RankingViewController.h"
 #import "AnchorViewController.h"
-
 
 @interface YWFindViewController ()
 
@@ -29,9 +27,8 @@
         YWFindViewController *findVC = [[YWFindViewController alloc]initWithViewControllerClasses:[self viewControllersArray] andTheirTitles:@[@"推荐",@"分类",@"直播",@"榜单",@"主播"]];
         findVC.menuViewStyle = WMMenuViewStyleLine;
         findVC.progressColor = [UIColor redColor];
-        findVC.progressHeight = 3.5;
+        findVC.progressHeight = 1.0;
         navigationVC = [[UINavigationController alloc]initWithRootViewController:findVC];
-        
     }));
     
     return navigationVC;
@@ -49,7 +46,6 @@
              ];
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
@@ -58,15 +54,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

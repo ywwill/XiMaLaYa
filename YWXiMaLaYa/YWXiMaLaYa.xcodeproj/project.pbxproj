@@ -517,13 +517,6 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		618769581D65923B0018B807 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
 		61C610361D658C2B00219E61 = {
 			isa = PBXGroup;
 			children = (
@@ -551,7 +544,6 @@
 			children = (
 				618769441D65922E0018B807 /* Class */,
 				618769571D6592340018B807 /* Category */,
-				618769581D65923B0018B807 /* Vendor */,
 				61C6104E1D658C2B00219E61 /* Assets.xcassets */,
 				61C610421D658C2B00219E61 /* Supporting Files */,
 			);
@@ -983,9 +975,9 @@
 				DEVELOPMENT_TEAM = 7Q3FN28VDH;
 				GCC_PREFIX_HEADER = /Users/yangwei/dev/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.will.runtime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -998,9 +990,9 @@
 				DEVELOPMENT_TEAM = 7Q3FN28VDH;
 				GCC_PREFIX_HEADER = /Users/yangwei/dev/Project/XiMaLaYa/YWXiMaLaYa/YWXiMaLaYa/PrefixHeader.pch;
 				INFOPLIST_FILE = YWXiMaLaYa/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yw.will.YWXiMaLaYa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.will.runtime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

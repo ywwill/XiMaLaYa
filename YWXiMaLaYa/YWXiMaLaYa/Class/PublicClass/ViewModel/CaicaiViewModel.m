@@ -21,7 +21,7 @@
 - (instancetype)initWithAlbumId:(NSInteger)albumId isAsc:(BOOL)asc{
     
     if (self = [super init]) {
-        _pageId = 1;
+        _pageId = 0;
         _albumId = albumId;
         _asc = asc;
     }
@@ -35,7 +35,6 @@
         self.model = responseObject;
         completed(error);
     }];
-
 }
 
 #pragma mark - 返回专辑歌曲单
@@ -138,10 +137,6 @@
     NSString *path = self.model.tracks.list[row].coverSmall;
     return [NSURL URLWithString:path];
 }
-
-
-
-
 
 #pragma mark - 返回顶部视图标题系列属性
 

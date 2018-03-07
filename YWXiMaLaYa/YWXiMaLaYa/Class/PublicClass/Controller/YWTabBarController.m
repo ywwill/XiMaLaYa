@@ -9,9 +9,9 @@
 #import "YWTabBarController.h"
 #import "YWFindViewController.h"
 #import "YWMeViewController.h"
-#import "YWSoundViewController.h"
+//#import "YWSoundViewController.h"
 #import "YWDownloadViewController.h"
-
+#import "CaiCaiViewController.h"
 
 @interface YWTabBarController ()
 
@@ -25,8 +25,8 @@
     UINavigationController *findNavigationVC = [YWFindViewController defaultFindUINavigationController];
     [self setupChildVC:findNavigationVC imageName:@"tabbar_find_n" selectedImage:@"tabbar_find_h"];
     
-    YWSoundViewController *soundVC = [YWSoundViewController soundViewController];
-    [self setupChildVC:soundVC imageName:@"tabbar_sound_n" selectedImage:@"tabbar_sound_h"];
+    CaiCaiViewController *caicai = [[CaiCaiViewController alloc] init];
+    [self setupChildVC:caicai imageName:@"tabbar_sound_n" selectedImage:@"tabbar_sound_h"];
     
     // 只占用空间
     UIViewController *vc = [UIViewController new];
@@ -42,8 +42,6 @@
     [self setupChildVC:meVC imageName:@"tabbar_me_n" selectedImage:@"tabbar_me_h"];
     
     self.tabBar.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {

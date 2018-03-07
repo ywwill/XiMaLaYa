@@ -27,15 +27,15 @@
     YDISPATCH_ONCE_BLOCK((^{
         
         soundVC = [[YWSoundViewController alloc] initWithViewControllerClasses:[self viewControllers] andTheirTitles:@[@"采采"]];
-        //        WMPageController的设置
+        
         soundVC.menuViewStyle = WMMenuViewStyleLine;
         // 设置背景色
         soundVC.menuBGColor = [UIColor whiteColor];
 
         // 设置每个item的宽
         soundVC.itemsWidths = @[@(SCREEN_WIDTH)];
-        soundVC.progressHeight = 3.5;
-        soundVC.menuHeight = 45;
+        soundVC.progressHeight = 0.0;
+//        soundVC.menuHeight = 45;
         soundVC.viewFrame = CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT-20);
     }));
     
