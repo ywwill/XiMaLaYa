@@ -44,9 +44,8 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    self.navigationController.navigationBar.hidden = NO;
+    self.navigationController.navigationBar.hidden = YES;
 }
-
 
 //初始化
 - (void)setUp{
@@ -76,10 +75,7 @@
         _infoView.describleView.describleLabel.text = self.tracksViewModel.albumDesc.length == 0 ? @"暂无简介" : self.tracksViewModel.albumDesc;
         
         [_infoView setupTagsBtnWithTagNames:self.tracksViewModel.tagsName];
-        
-        
     }];
-
 }
 
 
@@ -182,7 +178,5 @@
     }
     return _tableView;
 }
-
-
 
 @end
