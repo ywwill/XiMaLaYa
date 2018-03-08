@@ -15,13 +15,10 @@
 #import <iCarousel.h> //轮播图
 #import "FocusImageScrollView.h" // 封装好的头部视图
 
-
 //cell
 #import "FindPutCell.h"
 #import "SpecialCell.h"
 #import "DiscoveryCell.h"
-
-
 
 @interface HomePageViewController ()<UITableViewDataSource,UITableViewDelegate,iCarouselDataSource,iCarouselDelegate,ContentShowViewDelegate,TitleViewDelegate>
 
@@ -160,7 +157,8 @@
         }
         return cell;
     
-    }else{      //一排3个按钮的cell，小编推荐、热门推荐
+    }else{
+        //一排3个按钮的cell，小编推荐、热门推荐
         
         FindPutCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FCell"];
         
@@ -189,11 +187,8 @@
         cell.detailLb2.text = [self.homeVM trackTitleForSection:indexPath.section index:2];
         
         return cell;
-        
     }
 }
-
-
 
 #pragma -- mark UITableViewDelegate
 

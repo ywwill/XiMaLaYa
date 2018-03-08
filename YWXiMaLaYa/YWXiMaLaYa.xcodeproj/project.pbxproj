@@ -86,6 +86,7 @@
 		184A66268665E443784E8BF8 /* Pods-YWXiMaLaYa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWXiMaLaYa.release.xcconfig"; path = "Pods/Target Support Files/Pods-YWXiMaLaYa/Pods-YWXiMaLaYa.release.xcconfig"; sourceTree = "<group>"; };
 		4429CCF3204FE7E3001CF7D5 /* CommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
 		4429CCF4204FE7E3001CF7D5 /* CommonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
+		443D028D2050D6A8009CAE69 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		449B46B91D87E8AA0038CAF4 /* NSURL+YWLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+YWLoad.h"; sourceTree = "<group>"; };
 		449B46BA1D87E8AA0038CAF4 /* NSURL+YWLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YWLoad.m"; sourceTree = "<group>"; };
 		449B46BC1D87E8E70038CAF4 /* NSString+YWLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YWLoad.h"; sourceTree = "<group>"; };
@@ -570,6 +571,7 @@
 				61C610531D658C2B00219E61 /* Info.plist */,
 				61C610431D658C2B00219E61 /* main.m */,
 				618769591D65926A0018B807 /* PrefixHeader.pch */,
+				443D028D2050D6A8009CAE69 /* Config.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

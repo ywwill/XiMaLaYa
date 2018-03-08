@@ -139,10 +139,6 @@
     return [NSURL URLWithString:path];
 }
 
-
-
-
-
 #pragma mark - 返回顶部视图标题系列属性
 
 - (NSString *)albumTitle{
@@ -158,7 +154,6 @@
         return @(self.model.album.playTimes).stringValue;
     }else{
         return [NSString stringWithFormat:@"%.1f万", (CGFloat)count/10000];
-    
     }
 }
 
@@ -188,8 +183,5 @@
 
     return [self.model.album.tags componentsSeparatedByString:@","];
 }
-
-
-
 
 @end

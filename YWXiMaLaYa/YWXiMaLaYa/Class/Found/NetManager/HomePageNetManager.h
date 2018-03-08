@@ -13,5 +13,4 @@
 //获取首界面数据内容
 + (id)getHomePageIntroduceCompletionHandle:(void(^)(id responseObject, NSError *error))completed;
 
-
 @end

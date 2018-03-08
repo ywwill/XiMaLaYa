@@ -9,6 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import "Config.h"
+
 //导入第三方
 #import <AFNetworking.h> 
 #import <UIKit+AFNetworking.h>//对UIKit类添加类拓展，让诸如UIButton, UIImageView

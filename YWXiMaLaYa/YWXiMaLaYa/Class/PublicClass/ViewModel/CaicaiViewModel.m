@@ -76,14 +76,6 @@
         return [NSString stringWithFormat:@"%ld天前",(long)days];
     }
     
-    //秒转月
-//    NSInteger months = time/3600/24/30;
-//    if (months >= 1) {
-//        return [NSString stringWithFormat:@"%ld月前",(long)months];
-//    }
-    //秒转年
-//    NSInteger years = time/3600/24/30/12;
-    
     return [CommonTool dateStringFormat:@"yyyy-MM-dd" timeInterval:createTime];
 
 }
