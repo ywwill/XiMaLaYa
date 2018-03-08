@@ -54,6 +54,7 @@
     }
     return _bgImgView;
 }
+
 // 接受外界传图
 - (UIImageView *)contentImgView {
     if (!_contentImgView) {

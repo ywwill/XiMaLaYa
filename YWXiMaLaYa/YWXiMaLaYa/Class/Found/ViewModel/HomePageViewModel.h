@@ -11,15 +11,6 @@
 
 @interface HomePageViewModel : BaseViewModel
 
-/* 小编推荐 editorRecommendAlbums*/
-
-/* 存储发现新奇栏 discoveryColumns 只显示不能选择 */
-@property (nonatomic, assign) NSInteger discoverCount;
-
-/* 存储精品听单 只显示不能选择 */
-@property (nonatomic, assign) NSInteger specialCount;
-
-
 /* 存储热门hotRecommends.list 各个分类栏 */
 @property (nonatomic, strong) NSArray *hotRecmmendsArr;
 
@@ -50,9 +41,6 @@
 // 节目集数 -- 下一个tableView的row
 - (NSInteger)tracksForSection:(NSInteger)section index:(NSInteger)index;
 
-/* SpecialCell的属性方法 */
-- (NSString *)footNoteForRow:(NSInteger)row;
-
 /* 热门直播cell的图片 只显示不能选择 */
 - (NSURL *)entrancesURL;
 - (NSString *)entrancesTitle;
@@ -72,7 +60,7 @@
 
 /* 分类点击“更多”后需要传递的值 */
 - (NSInteger)categoryIdForSection:(NSInteger)section;
-- (NSString *)contentTypeForSection:(NSInteger)section;
 
+- (NSString *)contentTypeForSection:(NSInteger)section;
 
 @end
